@@ -1,3 +1,28 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+}
+.logo {
+    width: 300px;
+    height: 300px;
+}
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
 .App {
   text-align: center;
 }
