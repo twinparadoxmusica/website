@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.2f9139ba.css",
-    "main.js": "/static/js/main.df113428.js",
-    "static/js/453.bb828c5d.chunk.js": "/static/js/453.bb828c5d.chunk.js",
-    "static/media/twin-paradox-typography.png": "/static/media/twin-paradox-typography.4e78bbba8508067e9b41.png",
-    "index.html": "/index.html",
-    "main.2f9139ba.css.map": "/static/css/main.2f9139ba.css.map",
-    "main.df113428.js.map": "/static/js/main.df113428.js.map",
-    "453.bb828c5d.chunk.js.map": "/static/js/453.bb828c5d.chunk.js.map"
+    "main.css": "/website/static/css/main.2f9139ba.css",
+    "main.js": "/website/static/js/main.eeb073c5.js",
+    "static/js/453.bb828c5d.chunk.js": "/website/static/js/453.bb828c5d.chunk.js",
+    "static/media/twin-paradox-typography.png": "/website/static/media/twin-paradox-typography.4e78bbba8508067e9b41.png",
+    "index.html": "/website/index.html",
+    "main.2f9139ba.css.map": "/website/static/css/main.2f9139ba.css.map",
+    "main.eeb073c5.js.map": "/website/static/js/main.eeb073c5.js.map",
+    "453.bb828c5d.chunk.js.map": "/website/static/js/453.bb828c5d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2f9139ba.css",
-    "static/js/main.df113428.js"
+    "static/js/main.eeb073c5.js"
   ]
 }
