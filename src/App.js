@@ -190,7 +190,9 @@ function App() {
           </li>
           <li>
             <div className="margin-bottom-xxs">
-              <strong>Hypnotic Techno DJ Set at Hama Club</strong>
+              <strong>
+                Hypnotic Techno DJ Set at Hama Club - January 2025
+              </strong>
             </div>
             <div className="video-container">
               <iframe
