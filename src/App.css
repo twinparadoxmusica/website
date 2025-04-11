@@ -52,6 +52,12 @@ a {
   text-align: center;
 }
 
+.margin-bottom-xxs {
+  margin-bottom: 10px;
+}
+.margin-bottom-xs {
+  margin-bottom: 20px;
+}
 .margin-bottom-sm {
   margin-bottom: 40px;
 }
