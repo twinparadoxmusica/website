@@ -4,6 +4,85 @@ import './App.css';
 import { runAnimation } from './utils/animation';
 import logo from './assets/twin-paradox-typography.png';
 
+const socialLinks = [
+  {
+    icon: () => (
+      <img
+        src="https://img.icons8.com/?size=100&id=86885&format=png&color=FFFFFF"
+        alt="Mail"
+        className="w-6 h-6"
+      />
+    ),
+    url: 'mailto:twinparadoxmusica@gmail.com',
+    name: 'Mail',
+  },
+  {
+    icon: () => (
+      <img
+        src="https://img.icons8.com/?size=100&id=62852&format=png&color=FFFFFF"
+        alt="YouTube"
+        className="w-6 h-6"
+      />
+    ),
+    url: 'https://www.youtube.com/@_twinparadox',
+    name: 'YouTube',
+  },
+  {
+    icon: () => (
+      <img
+        src="https://img.icons8.com/?size=100&id=RhYNENh5cxlS&format=png&color=FFFFFF"
+        alt="Instagram"
+        className="w-6 h-6 invert"
+      />
+    ),
+    url: 'https://www.instagram.com/_twinparadox/',
+    name: 'Instagram',
+  },
+  {
+    name: 'Spotify',
+    url: 'https://open.spotify.com/artist/1yhioOAuZ2fk2Qip3eMWgx',
+    icon: () => (
+      <img
+        src="https://img.icons8.com/?size=100&id=11116&format=png&color=FFFFFF"
+        alt="Spotify"
+        className="w-6 h-6 invert"
+      />
+    ),
+  },
+  {
+    name: 'Apple Music',
+    url: 'https://music.apple.com/us/artist/twin-paradox/1738057737',
+    icon: () => (
+      <img
+        src="https://img.icons8.com/?size=100&id=mpeojql23sni&format=png&color=FFFFFF"
+        alt="Apple Music"
+        className="w-6 h-6 invert"
+      />
+    ),
+  },
+  {
+    name: 'Bandcamp',
+    url: 'https://twinparadoxmusica.bandcamp.com/album/insiders',
+    icon: () => (
+      <img
+        src="https://img.icons8.com/?size=100&id=rK25y5HOfE7E&format=png&color=FFFFFF"
+        alt="Bandcamp"
+        className="w-6 h-6"
+      />
+    ),
+  },
+  {
+    name: 'SoundCloud',
+    url: 'https://soundcloud.com/twin-paradox-musica',
+    icon: () => (
+      <img
+        src="https://img.icons8.com/?size=100&id=12499&format=png&color=FFFFFF"
+        alt="SoundCloud"
+        className="w-6 h-6"
+      />
+    ),
+  },
+];
 function App() {
   useEffect(() => {
     runAnimation();
@@ -16,7 +95,7 @@ function App() {
         <img
           src={logo}
           alt="Twin Paradox Logo"
-          className="fade-in margin-bottom-lg"
+          className="twin-paradox-logo fade-in margin-bottom-lg"
         ></img>
         <p>
           Twin Paradox, an Argentinian electronic music duo based in Geneva, was
@@ -26,7 +105,7 @@ function App() {
           guitar, voice and synthesizers, performing both <b>Live Sets</b> and{' '}
           <b>DJ formats</b>.
         </p>
-        <p>
+        <p className="margin-bottom-sm">
           Read full bio at{' '}
           <a
             target="_blank"
@@ -36,6 +115,20 @@ function App() {
             Resident Advisor
           </a>
         </p>
+        <div className="social-links">
+          {socialLinks.map(({ icon: Icon, url, name }) => (
+            <a
+              key={name}
+              href={url}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={name}
+              className="hover:text-blue-500 transition-colors"
+            >
+              <Icon className="w-6 h-6" />
+            </a>
+          ))}
+        </div>
       </section>
 
       <section id="videos" className="section">
@@ -77,7 +170,7 @@ function App() {
             </div>
             <div className="video-container">
               <iframe
-                width="50%"
+                width="500"
                 height="300"
                 scrolling="no"
                 frameBorder="no"
@@ -101,7 +194,7 @@ function App() {
             </div>
             <div className="video-container">
               <iframe
-                width="50%"
+                width="500"
                 height="300"
                 scrolling="no"
                 frameBorder="no"
@@ -115,7 +208,7 @@ function App() {
               <strong>Hypnotic Minimal House Studio Mix - July 2024</strong>
             </div>
             <iframe
-              width="50%"
+              width="500"
               height="300"
               scrolling="no"
               frameBorder="no"
