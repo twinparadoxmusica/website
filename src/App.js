@@ -28,7 +28,13 @@ function App() {
         </p>
         <p>
           Read full bio at{' '}
-          <a href="https://ra.co/dj/twinparadox/biography">Resident Advisor</a>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://ra.co/dj/twinparadox/biography"
+          >
+            Resident Advisor
+          </a>
         </p>
       </section>
 
@@ -66,12 +72,56 @@ function App() {
           <li>
             <strong>Insiders</strong> – Released January 2025
             <br />
-            <a href="https://hypeddit.com/twinparadox/insiders">Listen Now</a>
+            <div className="margin-bottom-xs">
+              <a href="https://hypeddit.com/twinparadox/insiders">Listen Now</a>
+            </div>
+            <div className="video-container">
+              <iframe
+                width="50%"
+                height="300"
+                scrolling="no"
+                frameBorder="no"
+                allow="autoplay"
+                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2017289757&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+              ></iframe>
+            </div>
           </li>
           <li>
             <strong>Outbreak</strong> – Coming April 2025
             <br />
-            <a href="https://linktorelease.com/outbreak">Pre-save Now</a>
+            <div className="margin-bottom-sm">
+              <a href="https://distrokid.com/hyperfollow/twinparadox/outbreak">
+                Pre-save Now
+              </a>
+            </div>
+          </li>
+          <li>
+            <div className="margin-bottom-xxs">
+              <strong>Hypnotic Techno DJ Set at Hama Club</strong>
+            </div>
+            <div className="video-container">
+              <iframe
+                width="50%"
+                height="300"
+                scrolling="no"
+                frameBorder="no"
+                allow="autoplay"
+                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2069654668&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+              ></iframe>
+            </div>
+          </li>
+          <li>
+            <div className="margin-bottom-xxs">
+              <strong>Hypnotic Minimal House Studio Mix - July 2024</strong>
+            </div>
+            <iframe
+              width="50%"
+              height="300"
+              scrolling="no"
+              frameBorder="no"
+              allow="autoplay"
+              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1863839835&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+            ></iframe>
           </li>
         </ul>
       </section>
