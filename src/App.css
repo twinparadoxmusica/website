@@ -90,7 +90,7 @@ a {
 
   /* For medium-sized screens (e.g., tablets) */
   @media (max-width: 768px) {
-    img {
+    .twin-paradox-logo {
       width: 80%; /* Adjust width to 80% for medium screens */
     }
   }
@@ -103,7 +103,7 @@ a {
   }
   /* For smaller screens (e.g., mobile devices) */
   @media (max-width: 480px) {
-    img {
+    .twin-paradox-logo {
       width: 100%; /* Adjust width to 100% for smaller screens */
     }
   }
