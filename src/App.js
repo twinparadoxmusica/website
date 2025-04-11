@@ -43,7 +43,7 @@ function App() {
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerPolicy="strict-origin-when-cross-origin"
-            allowfullscreen
+            allowFullScreen
           ></iframe>
         </div>
         <div className="video-container">
@@ -55,7 +55,7 @@ function App() {
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerPolicy="strict-origin-when-cross-origin"
-            allowfullscreen
+            allowFullScreen
           ></iframe>
         </div>
       </section>
@@ -79,9 +79,7 @@ function App() {
       {/* Contact Section */}
       <section id="contact" className="section">
         <h2>Contact</h2>
-        <p>
-          Feel free to reach out for collaborations, gigs, or anything else!
-        </p>
+        <p>Feel free to reach out to the following email:</p>
         <p>
           <a href="mailto:twinparadoxmusica@gmail.com">
             twinparadoxmusica@gmail.com
