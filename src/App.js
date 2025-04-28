@@ -165,9 +165,7 @@ function App() {
           <li>
             <strong>Insiders</strong> – Released January 2025
             <br />
-            <div className="margin-bottom-xs">
-              <a href="https://hypeddit.com/twinparadox/insiders">Listen Now</a>
-            </div>
+            <br />
             <div className="video-container">
               <iframe
                 width="500"
@@ -180,12 +178,18 @@ function App() {
             </div>
           </li>
           <li>
-            <strong>Outbreak</strong> – Coming April 2025
+            <strong>Outbreak</strong> – Released April 2025
+            <br />
             <br />
             <div className="margin-bottom-sm">
-              <a href="https://distrokid.com/hyperfollow/twinparadox/outbreak">
-                Pre-save Now
-              </a>
+              <iframe
+                width="500"
+                height="166"
+                scrolling="no"
+                frameBorder="no"
+                allow="autoplay"
+                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2070386344&color=%23ff5500&auto_play=true&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false"
+              ></iframe>
             </div>
           </li>
           <li>
