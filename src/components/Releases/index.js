@@ -7,7 +7,7 @@ const Releases = () => (
     <ul>
       <li>
         <Link to="/releases/insiders">
-          <strong>Insiders</strong>
+          <strong>INSIDERS</strong>
         </Link>{' '}
         – Released January 2025
         <br />
@@ -25,7 +25,7 @@ const Releases = () => (
       </li>
       <li>
         <Link to="/releases/outbreak">
-          <strong>Outbreak</strong>
+          <strong>OUTBREAK</strong>
         </Link>{' '}
         – Released April 2025
         <br />

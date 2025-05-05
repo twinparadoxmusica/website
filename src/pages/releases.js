@@ -1,20 +1,13 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Layout from '../components/Layout/index.js';
+import Releases from '../components/Releases/index.js';
 
-function Releases() {
+const ReleasesPage = () => {
   return (
-    <div>
-      <h1>Releases</h1>
-      <ul>
-        <li>
-          <Link to="/releases/outbreak">Outbreak</Link>
-        </li>
-        <li>
-          <Link to="/releases/insiders">Insiders</Link>
-        </li>
-      </ul>
-    </div>
+    <Layout>
+      <Releases />
+    </Layout>
   );
-}
+};
 
-export default Releases;
+export default ReleasesPage;
