@@ -5,6 +5,7 @@ import logoSoundCloud from '../assets/soundcloud.png';
 import logoYouTube from '../assets/youtube.png';
 import logoDeezer from '../assets/deezer.png';
 import logoBandcamp from '../assets/bandcamp.png';
+import Layout from '../components/Layout/index.js';
 
 const platforms = [
   {
@@ -41,10 +42,11 @@ const platforms = [
 
 const Outbreak = () => {
   return (
-    <div className="min-h-screen bg-black text-white flex flex-col items-center px-4 py-10">
-      <section id="releases" className="section-no-padding margin-top-xs">
-        <h1 className="text-4xl font-bold mb-4">OUTBREAK</h1>
-        <p className="text-lg mb-6">Listen to the new single by Twin Paradox</p>
+    <Layout>
+      <section id="releases" className="section-no-padding margin-top-xxs">
+        <p className="text-lg mb-6">
+          <strong>OUTBREAK</strong> by Twin Paradox
+        </p>
         <div className="video-container">
           <iframe
             width="300"
@@ -76,7 +78,7 @@ const Outbreak = () => {
           ))}
         </div>
       </section>
-    </div>
+    </Layout>
   );
 };
 

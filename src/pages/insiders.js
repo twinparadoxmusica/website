@@ -1,8 +1,9 @@
 import React from 'react';
+import Layout from '../components/Layout/index.js';
 
 function Insiders() {
   return (
-    <div>
+    <Layout>
       <h1>Insiders</h1>
       <iframe
         width="100%"
@@ -12,7 +13,7 @@ function Insiders() {
         frameBorder="0"
         allowFullScreen
       ></iframe>
-    </div>
+    </Layout>
   );
 }
 

@@ -2,9 +2,8 @@ import React, { useEffect } from 'react';
 import '../App.css';
 import { runAnimation } from '../utils/animation.js';
 import About from '../components/About.js';
-import Releases from '../components/Releases.js';
-import Videos from '../components/Videos.js';
-import Contact from '../components/Contact.js';
+import Contact from '../components/Contact/index.js';
+import Layout from '../components/Layout/index.js';
 
 const App = () => {
   useEffect(() => {
@@ -12,16 +11,10 @@ const App = () => {
   }, []);
 
   return (
-    <div className="app">
-      <canvas id="galaxyCanvas"></canvas>
+    <Layout>
       <About />
-      <Videos />
-      <Releases />
       <Contact />
-      <footer>
-        <p>&copy; 2025 Twin Paradox. All rights reserved.</p>
-      </footer>
-    </div>
+    </Layout>
   );
 };
 
