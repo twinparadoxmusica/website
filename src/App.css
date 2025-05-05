@@ -52,6 +52,13 @@ a {
   text-align: center;
 }
 
+.section-no-padding {
+  padding: 0;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
 .margin-bottom-xxs {
   margin-bottom: 10px;
 }
@@ -64,6 +71,20 @@ a {
 
 .margin-bottom-lg {
   margin-bottom: 60px;
+}
+
+.margin-top-xxs {
+  margin-top: 10px;
+}
+.margin-top-xs {
+  margin-top: 20px;
+}
+.margin-top-sm {
+  margin-top: 40px;
+}
+
+.margin-top-lg {
+  margin-top: 60px;
 }
 
 .fade-in {
@@ -186,4 +207,47 @@ footer {
   text-align: center;
   padding: 20px;
   margin-top: 40px;
+}
+
+.platform-links-container {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.platform-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Distribute space between image and text */
+  gap: 1rem; /* Space between the image and text */
+  text-decoration: none;
+  background: white;
+  margin: 1rem 0.5rem;
+  color: black;
+  border-radius: 4px;
+  a {
+    text-decoration: none;
+    padding: 0.8rem;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+.platform-link:hover {
+  text-decoration: none;
+  background-color: #e8e8e8; /* Darker shade when hovered */
+}
+
+.platform-text {
+  color: black;
+  font-weight: 600;
+  font-size: 1rem;
+  text-align: right;
+  text-decoration: none; /* Remove underline */
+  transition: background-color 0.3s ease;
+  float: right;
+}
+
+.platform-logo {
+  height: 25px; /* Consistent height */
+  vertical-align: middle;
 }

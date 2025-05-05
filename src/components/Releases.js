@@ -1,11 +1,15 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Releases = () => (
   <section id="releases" className="section">
     <h2>Releases</h2>
     <ul>
       <li>
-        <strong>Insiders</strong> – Released January 2025
+        <Link to="/releases/insiders">
+          <strong>Insiders</strong>
+        </Link>{' '}
+        – Released January 2025
         <br />
         <br />
         <div className="video-container">
@@ -20,7 +24,10 @@ const Releases = () => (
         </div>
       </li>
       <li>
-        <strong>Outbreak</strong> – Released April 2025
+        <Link to="/releases/outbreak">
+          <strong>Outbreak</strong>
+        </Link>{' '}
+        – Released April 2025
         <br />
         <br />
         <div className="margin-bottom-sm">
