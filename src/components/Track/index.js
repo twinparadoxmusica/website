@@ -8,7 +8,7 @@ const Track = ({ track: { title, soundCloudIframe, platforms } }) => {
       <p className="text-lg mb-6">
         <strong>{title}</strong> by Twin Paradox
       </p>
-      <div className="video-container margin-bottom-sm">
+      <div className="video-container">
         <iframe
           width="300"
           height="300"
@@ -18,8 +18,6 @@ const Track = ({ track: { title, soundCloudIframe, platforms } }) => {
           src={soundCloudIframe}
         ></iframe>
       </div>
-      <SocialLinks />
-
       <div className="platform-links-container">
         {platforms.map((platform) => (
           <div className="platform-link" key={platform.name}>
@@ -40,6 +38,7 @@ const Track = ({ track: { title, soundCloudIframe, platforms } }) => {
           </div>
         ))}
       </div>
+      <SocialLinks />
     </section>
   );
 };
