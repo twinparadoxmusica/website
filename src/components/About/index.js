@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import SocialLinks from './SocialLinks.js';
-import logo from '../assets/twin-paradox-typography.png';
-import TwinParadox from '../assets/Twin-Paradox-DJ-Set.jpg';
+import SocialLinks from '../SocialLinks/index.js';
+import logo from '../../assets/twin-paradox-typography.png';
 
 const About = ({ hideText }) => (
   <section id="about" className="section">
@@ -35,11 +34,6 @@ const About = ({ hideText }) => (
         <SocialLinks />
       </div>
     )}
-    <img
-      src={TwinParadox}
-      alt="Twin Paradox Logo"
-      className="twin-paradox-logo fade-in"
-    ></img>
   </section>
 );
 

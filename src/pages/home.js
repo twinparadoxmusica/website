@@ -1,8 +1,9 @@
 import React, { useEffect } from 'react';
 import '../App.css';
 import { runAnimation } from '../utils/animation.js';
-import About from '../components/About.js';
-import Contact from '../components/Contact/index.js';
+import About from '../components/About/index.js';
+import Collage from '../components/Collage/index.js';
+import Contact from '../components/ContactLinks/index.js';
 import Layout from '../components/Layout/index.js';
 
 const App = () => {
@@ -13,6 +14,7 @@ const App = () => {
   return (
     <Layout>
       <About />
+      <Collage />
       <Contact />
     </Layout>
   );
