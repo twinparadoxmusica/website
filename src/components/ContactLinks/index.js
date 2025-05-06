@@ -1,13 +1,14 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Contact = () => (
   <section id="contact" className="section">
     <h2>Contact</h2>
-    <p>Feel free to reach out at:</p>
     <p>
-      <a data-name="mail-text" href="mailto:twinparadoxmusica@gmail.com">
-        twinparadoxmusica@gmail.com
-      </a>
+      Feel free to drop a message{' '}
+      <Link to="/contact">
+        <strong>here</strong>
+      </Link>
     </p>
     <p>
       <a

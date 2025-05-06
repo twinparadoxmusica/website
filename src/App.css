@@ -46,7 +46,7 @@ a {
 }
 
 .section {
-  padding: 60px 20px 0;
+  padding: 20px 20px 0;
   max-width: 1000px;
   margin: 0 auto;
   text-align: center;
@@ -206,7 +206,7 @@ footer {
   color: white;
   text-align: center;
   padding: 20px;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .platform-links-container {
@@ -234,7 +234,7 @@ footer {
 
 .platform-link:hover {
   text-decoration: none;
-  background-color: #e8e8e8; /* Darker shade when hovered */
+  background-color: #e8e8e8;
 }
 
 .platform-text {
@@ -250,4 +250,19 @@ footer {
 .platform-logo {
   height: 25px; /* Consistent height */
   vertical-align: middle;
+}
+
+.layout-container {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+/* Optional: adjust padding on very small screens */
+@media (max-width: 600px) {
+  .layout-container {
+    padding: 1rem 0.75rem;
+  }
 }

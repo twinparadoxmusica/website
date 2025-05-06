@@ -12,7 +12,7 @@ const Layout = ({ children }) => {
     <>
       <canvas id="galaxyCanvas"></canvas>
       <NavBar />
-      <main className="layout-content">{children}</main>
+      <main className="layout-container">{children}</main>
       <footer>
         <p>
           &copy; 2025 Twin Paradox

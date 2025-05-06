@@ -6,12 +6,32 @@ const Releases = () => (
     <h2>Releases</h2>
     <ul>
       <li>
-        <Link to="/releases/insiders">
-          <strong>INSIDERS</strong>
-        </Link>{' '}
-        – Released January 2025
-        <br />
-        <br />
+        <div className="margin-bottom-xs">
+          <Link to="/releases/outbreak">
+            <strong>OUTBREAK</strong>
+          </Link>
+          <br />
+          April 2025
+        </div>
+        <div className="margin-bottom-sm">
+          <iframe
+            width="500"
+            height="166"
+            scrolling="no"
+            frameBorder="no"
+            allow="autoplay"
+            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2070386344&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false"
+          ></iframe>
+        </div>
+      </li>
+      <li>
+        <div className="margin-bottom-xs">
+          <Link to="/releases/insiders">
+            <strong>INSIDERS</strong>
+          </Link>
+          <br />
+          January 2025
+        </div>
         <div className="video-container">
           <iframe
             width="500"
@@ -23,27 +43,12 @@ const Releases = () => (
           ></iframe>
         </div>
       </li>
+
       <li>
-        <Link to="/releases/outbreak">
-          <strong>OUTBREAK</strong>
-        </Link>{' '}
-        – Released April 2025
-        <br />
-        <br />
-        <div className="margin-bottom-sm">
-          <iframe
-            width="500"
-            height="166"
-            scrolling="no"
-            frameBorder="no"
-            allow="autoplay"
-            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2070386344&color=%23ff5500&auto_play=true&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false"
-          ></iframe>
-        </div>
-      </li>
-      <li>
-        <div className="margin-bottom-xxs">
-          <strong>Hypnotic Techno DJ Set at Hama Club - January 2025</strong>
+        <div className="margin-bottom-xs">
+          <strong>Hypnotic Techno DJ Set at Hama Club</strong>
+          <br />
+          January 2025
         </div>
         <div className="video-container">
           <iframe
@@ -57,8 +62,10 @@ const Releases = () => (
         </div>
       </li>
       <li>
-        <div className="margin-bottom-xxs">
-          <strong>Hypnotic Minimal House Studio Mix - July 2024</strong>
+        <div className="margin-bottom-xs">
+          <strong>Hypnotic Minimal House Studio Mix</strong>
+          <br />
+          July 2024
         </div>
         <iframe
           width="500"
