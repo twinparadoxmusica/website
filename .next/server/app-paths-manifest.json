@@ -1,0 +1,8 @@
+{
+  "/contact/page": "app/contact/page.js",
+  "/releases/page": "app/releases/page.js",
+  "/videos/page": "app/videos/page.js",
+  "/releases/insiders/page": "app/releases/insiders/page.js",
+  "/releases/outbreak/page": "app/releases/outbreak/page.js",
+  "/page": "app/page.js"
+}
