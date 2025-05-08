@@ -1,0 +1,85 @@
+import React from 'react';
+import Link from 'next/link';
+import SocialLinks from '../SocialLinks/index.js';
+
+const Releases = () => (
+  <section id="releases" className="section">
+    <h2>Releases</h2>
+    <ul className="margin-bottom-sm">
+      <li>
+        <div className="margin-bottom-xs">
+          <Link href="/releases/outbreak">
+            <strong>OUTBREAK</strong>
+          </Link>
+          <br />
+          April 2025
+        </div>
+        <div className="margin-bottom-sm">
+          <iframe
+            width="500"
+            height="166"
+            scrolling="no"
+            frameBorder="no"
+            allow="autoplay"
+            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2070386344&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false"
+          ></iframe>
+        </div>
+      </li>
+      <li>
+        <div className="margin-bottom-xs">
+          <Link href="/releases/insiders">
+            <strong>INSIDERS</strong>
+          </Link>
+          <br />
+          January 2025
+        </div>
+        <div className="video-container">
+          <iframe
+            width="500"
+            height="166"
+            scrolling="no"
+            frameBorder="no"
+            allow="autoplay"
+            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2017289757&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=true"
+          ></iframe>
+        </div>
+      </li>
+
+      <li>
+        <div className="margin-bottom-xs">
+          <strong>Hypnotic Techno DJ Set at Hama Club</strong>
+          <br />
+          January 2025
+        </div>
+        <div className="video-container">
+          <iframe
+            width="500"
+            height="166"
+            scrolling="no"
+            frameBorder="no"
+            allow="autoplay"
+            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2069654668&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=true"
+          ></iframe>
+        </div>
+      </li>
+      <li>
+        <div className="margin-bottom-xs">
+          <strong>Hypnotic Minimal House Studio Mix</strong>
+          <br />
+          July 2024
+        </div>
+        <iframe
+          width="500"
+          height="166"
+          scrolling="no"
+          frameBorder="no"
+          allow="autoplay"
+          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1863839835&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=true"
+        ></iframe>
+      </li>
+    </ul>
+    <SocialLinks />
+  </section>
+);
+
+export default Releases;
