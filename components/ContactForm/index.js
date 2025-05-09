@@ -1,5 +1,7 @@
+/* eslint-disable no-undef */
 'use client';
 import React, { useState } from 'react';
+import fetch from 'node-fetch';
 import './styles.css';
 
 const ContactForm = () => {
@@ -9,7 +11,13 @@ const ContactForm = () => {
     e.preventDefault();
 
     const form = e.target;
-    const data = new FormData(form);
+    const data = typeof FormData !== 'undefined' ? new FormData(form) : null;
+    if (!data) {
+      if (typeof window !== 'undefined') {
+        alert('FormData is not supported in this environment.');
+      }
+      return;
+    }
 
     const response = await fetch(
       'https://formsubmit.co/twinparadoxmusica@gmail.com',
@@ -23,7 +31,10 @@ const ContactForm = () => {
       setSubmitted(true);
       form.reset();
     } else {
-      alert('Failed to send message. Please try again.');
+      if (typeof window !== 'undefined') {
+        // eslint-disable-next-line no-undef
+        alert('Failed to send message. Please try again.');
+      }
     }
   };
 
