@@ -8,26 +8,60 @@ const GalaxyCanvas = () => {
     if (!canvas) return;
 
     const ctx = canvas.getContext('2d');
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
 
-    const stars = Array.from({ length: 150 }, () => ({
-      x: Math.random() * canvas.width,
-      y: Math.random() * canvas.height,
-      radius: Math.random() * 2,
-      speed: Math.random() * 0.5 + 0.2,
-    }));
+    const resizeCanvas = () => {
+      canvas.width = window.innerWidth;
+      canvas.height = document.body.scrollHeight; // Full scrollable height
+    };
+
+    resizeCanvas();
+
+    const centerX = canvas.width / 2;
+    const centerY = window.innerHeight / 2; // Only center on screen, not whole scroll
+
+    const stars = Array.from({ length: 800 }, () => createStar());
+
+    function createStar() {
+      return {
+        x: Math.random() * canvas.width - centerX,
+        y: Math.random() * canvas.height - centerY,
+        z: Math.random() * canvas.width,
+        size: Math.random() * 2 + 0.5,
+        fade: 0, // Fade-in progress, starts from 0
+      };
+    }
 
     function animate() {
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-      ctx.fillStyle = 'rgba(255, 255, 255, 0.8)';
+      ctx.fillStyle = 'black';
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-      stars.forEach((star) => {
-        ctx.beginPath();
-        ctx.arc(star.x, star.y, star.radius, 0, Math.PI * 2);
-        ctx.fill();
-        star.y += star.speed;
-        if (star.y > canvas.height) star.y = 0;
+      stars.forEach((star, index) => {
+        star.z -= 0.2;
+        if (star.z <= 0.1) {
+          stars[index] = createStar();
+          return;
+        }
+
+        const k = 128 / star.z;
+        const sx = star.x * k + centerX;
+        const sy = star.y * k + centerY + window.scrollY;
+
+        const radius = star.size * (1 - star.z / canvas.width);
+        const fadeSpeed = 0.01; // The speed at which the star fades in
+        star.fade = Math.min(1, star.fade + fadeSpeed); // Gradually increase the fade value (max is 1)
+
+        const brightness = Math.min(
+          255,
+          Math.max(0, star.fade * 255 - (star.z / canvas.width) * 255)
+        );
+
+        ctx.fillStyle = `rgb(${brightness}, ${brightness}, ${brightness})`;
+
+        if (sx >= 0 && sx <= canvas.width && sy >= 0 && sy <= canvas.height) {
+          ctx.beginPath();
+          ctx.arc(sx, sy, radius, 0, Math.PI * 2);
+          ctx.fill();
+        }
       });
 
       requestAnimationFrame(animate);
@@ -35,19 +69,15 @@ const GalaxyCanvas = () => {
 
     animate();
 
-    const handleResize = () => {
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
-    };
-
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+    window.addEventListener('resize', resizeCanvas);
+    return () => window.removeEventListener('resize', resizeCanvas);
   }, []);
 
   return (
     <canvas
       id="galaxyCanvas"
-      className="fixed top-0 left-0 w-full h-full z-[-1]"
+      className="absolute top-0 left-0 w-full pointer-events-none z-[-1]"
+      style={{ height: '100%', backgroundColor: 'transparent' }}
     />
   );
 };
