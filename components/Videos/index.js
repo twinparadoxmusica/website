@@ -7,6 +7,7 @@ const Videos = () => (
 
     <div className="margin-bottom-xs">
       <a
+        target="_blank"
         className="video-link"
         href="https://www.youtube.com/watch?v=GEH6M5wipNk"
       >
@@ -29,6 +30,7 @@ const Videos = () => (
     </div>
     <div className="margin-bottom-xs">
       <a
+        target="_blank"
         className="video-link"
         href="https://www.youtube.com/watch?v=GEH6M5wipNk"
       >

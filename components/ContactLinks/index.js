@@ -2,15 +2,10 @@ import Link from 'next/link';
 
 const Contact = () => (
   <section id="contact" className="section">
-    <h2>Contact</h2>
-    <p>
-      Feel free to drop a message{' '}
-      <Link href="/contact">
-        <strong>here</strong>
-      </Link>
-    </p>
+    <h3 className="margin-bottom-xs">Download PressKit</h3>
     <p>
       <a
+        target="_blank"
         data-name="presskit-english"
         href="https://www.twinparadox.music/assets/TwinParadoxPressKit-EN.pdf"
       >
@@ -19,6 +14,7 @@ const Contact = () => (
     </p>
     <p>
       <a
+        target="_blank"
         data-name="presskit-french"
         href="https://www.twinparadox.music/assets/TwinParadoxPressKit-FR.pdf"
       >
