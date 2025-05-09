@@ -1,29 +1,23 @@
 'use client';
-import React, { useEffect } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import NavBar from '../NavBar/index.js'; // Adjust the path if needed
-import { runAnimation } from '../../utils/animation.js';
+import GalaxyCanvas from '../../utils/animation.js';
 
-const Layout = ({ children }) => {
-  useEffect(() => {
-    runAnimation();
-  }, []);
-
-  return (
-    <>
-      <canvas id="galaxyCanvas"></canvas>
-      <NavBar />
-      <main className="layout-container">{children}</main>
-      <footer>
-        <p>
-          &copy; 2025 Twin Paradox
-          <br />
-          All rights reserved
-        </p>
-      </footer>
-    </>
-  );
-};
+const Layout = ({ children }) => (
+  <>
+    <GalaxyCanvas />
+    <NavBar />
+    <main className="layout-container">{children}</main>
+    <footer>
+      <p>
+        &copy; 2025 Twin Paradox
+        <br />
+        All rights reserved
+      </p>
+    </footer>
+  </>
+);
 
 Layout.propTypes = {
   children: PropTypes.func.isRequired,
