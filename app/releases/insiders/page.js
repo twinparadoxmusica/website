@@ -1,6 +1,5 @@
-import React from 'react';
-import Layout from '../../../components/Layout/index.js';
-import Track from '../../../components/Track/index.js';
+import Layout from '../../../components/Layout';
+import Track from '../../../components/Track';
 import INSIDERS from '../../../constants/insiders.js';
 
 const Insiders = () => {

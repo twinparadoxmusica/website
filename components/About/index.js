@@ -1,6 +1,5 @@
-import React from 'react';
 import PropTypes from 'prop-types';
-import SocialLinks from '../SocialLinks/index.js';
+import SocialLinks from '../SocialLinks';
 
 const About = ({ hideText }) => (
   <section id="about" className="section">

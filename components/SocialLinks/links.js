@@ -1,5 +1,3 @@
-import React from 'react';
-
 const links = [
   {
     url: 'mailto:twinparadoxmusica@gmail.com',

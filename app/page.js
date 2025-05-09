@@ -1,8 +1,7 @@
-import React from 'react';
-import About from '../components/About/index.js';
-import Collage from '../components/Collage/index.js';
-import Contact from '../components/ContactLinks/index.js';
-import Layout from '../components/Layout/index.js';
+import About from '../components/About';
+import Collage from '../components/Collage';
+import Contact from '../components/ContactLinks';
+import Layout from '../components/Layout';
 
 const App = () => {
   return (
