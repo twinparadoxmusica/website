@@ -2,6 +2,7 @@ import js from '@eslint/js';
 import reactPlugin from 'eslint-plugin-react';
 import prettierPlugin from 'eslint-plugin-prettier';
 import babelParser from '@babel/eslint-parser';
+import globals from 'globals';
 
 export default [
   js.configs.recommended, // replaces 'eslint:recommended'
@@ -16,8 +17,10 @@ export default [
           presets: ['@babel/preset-react'], // Enable React JSX support in Babel
         },
       },
+      globals: {
+        ...globals.browser, // ✅ this gives you fetch, FormData, alert, etc.
+      },
     },
-
     plugins: {
       react: reactPlugin,
       prettier: prettierPlugin,
