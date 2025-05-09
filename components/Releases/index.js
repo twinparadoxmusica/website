@@ -4,6 +4,8 @@ import SocialLinks from '../SocialLinks';
 const Releases = () => (
   <section id="releases" className="section">
     <h2>Releases</h2>
+    <p>Listen our music on streaming platforms!</p>
+    <SocialLinks onlyMusicIcons />
     <ul className="margin-bottom-sm">
       <li>
         <div className="margin-bottom-xs">
@@ -77,7 +79,6 @@ const Releases = () => (
         ></iframe>
       </li>
     </ul>
-    <SocialLinks />
   </section>
 );
 

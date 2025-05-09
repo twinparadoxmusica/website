@@ -48,14 +48,17 @@
 /* Mobile adjustments */
 @media (max-width: 768px) {
   .collage-bottom {
-    flex-direction: column;
+    flex-direction: row;
     height: auto;
   }
 
   .collage-bottom img,
   .collage-top img,
   .collage-footer img {
-    height: 400px;
+    max-height: 400px;
     width: 100%;
+  }
+  .collage-bottom img {
+    width: 48%;
   }
 }

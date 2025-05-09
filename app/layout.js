@@ -198,6 +198,18 @@ const RootLayout = ({ children }) => {
 
         <link rel="apple-touch-icon" href="/logo192.png" />
         <link rel="manifest" href="/manifest.json" />
+        {/* Google Analytics (gtag.js) */}
+        <Script
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-1F4BWLL1T6'); // Replace with your actual GA4 ID
+            `,
+          }}
+        />
         {/* Google Tag Manager noscript */}
         <noscript>
           <iframe
