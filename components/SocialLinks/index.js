@@ -5,11 +5,10 @@ const SocialLinks = ({ onlyMusicIcons }) => {
   return (
     <div className="social-links">
       {links
-        .filter(
-          (elem) =>
-            onlyMusicIcons &&
-            elem.name !== 'instagram' &&
-            elem.name !== 'mail-icon'
+        .filter((elem) =>
+          onlyMusicIcons
+            ? elem.name !== 'instagram' && elem.name !== 'mail-icon'
+            : true
         )
         .map(({ icon: Icon, url, name }) => (
           <a

@@ -1,15 +1,16 @@
 import Link from 'next/link';
 import SocialLinks from '../SocialLinks';
+import './styles.css';
 
 const Music = () => (
-  <section id="releases" className="section">
+  <section id="music" className="section">
     <h2>Music</h2>
     <p>Listen our music on streaming platforms!</p>
     <SocialLinks onlyMusicIcons />
     <ul className="margin-bottom-sm">
       <li>
         <div className="margin-bottom-xs">
-          <Link href="/releases/outbreak">
+          <Link href="/music/outbreak">
             <strong>OUTBREAK</strong>
           </Link>
           <br />
@@ -28,7 +29,7 @@ const Music = () => (
       </li>
       <li>
         <div className="margin-bottom-xs">
-          <Link href="/releases/insiders">
+          <Link href="/music/insiders">
             <strong>INSIDERS</strong>
           </Link>
           <br />
@@ -48,7 +49,12 @@ const Music = () => (
 
       <li>
         <div className="margin-bottom-xs">
-          <strong>Hypnotic Techno DJ Set at Hama Club</strong>
+          <a
+            className="music-link"
+            href="https://soundcloud.com/twin-paradox-musica/dj-set-at-hama-club-mar-del-plata-argentina"
+          >
+            <strong>Hypnotic Techno DJ Set at Hama Club</strong>
+          </a>
           <br />
           January 2025
         </div>
@@ -65,7 +71,12 @@ const Music = () => (
       </li>
       <li>
         <div className="margin-bottom-xs">
-          <strong>Hypnotic Minimal House Studio Mix</strong>
+          <a
+            className="music-link"
+            href="https://soundcloud.com/twin-paradox-musica/hypnotic-minimal-house-studio-mix-003-july-2024"
+          >
+            <strong>Hypnotic Minimal House Studio Mix</strong>
+          </a>
           <br />
           July 2024
         </div>

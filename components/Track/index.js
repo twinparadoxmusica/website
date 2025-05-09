@@ -4,7 +4,7 @@ import './styles.css';
 
 const Track = ({ track: { title, soundCloudIframe, platforms } }) => {
   return (
-    <section id="releases" className="section-no-padding margin-top-xxs">
+    <section id="track" className="section-no-padding margin-top-xxs">
       <p className="release-header text-lg mb-6">
         <strong>{title}</strong> by Twin Paradox
       </p>
