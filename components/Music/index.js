@@ -1,9 +1,9 @@
 import Link from 'next/link';
 import SocialLinks from '../SocialLinks';
 
-const Releases = () => (
+const Music = () => (
   <section id="releases" className="section">
-    <h2>Releases</h2>
+    <h2>Music</h2>
     <p>Listen our music on streaming platforms!</p>
     <SocialLinks onlyMusicIcons />
     <ul className="margin-bottom-sm">
@@ -15,7 +15,7 @@ const Releases = () => (
           <br />
           April 2025
         </div>
-        <div className="margin-bottom-sm">
+        <div className="video-container">
           <iframe
             width="500"
             height="166"
@@ -82,4 +82,4 @@ const Releases = () => (
   </section>
 );
 
-export default Releases;
+export default Music;

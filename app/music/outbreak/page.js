@@ -1,5 +1,5 @@
-import Layout from '../../../components/Layout';
-import Track from '../../../components/Track';
+import Layout from '../../../components/Layout/index.js';
+import Track from '../../../components/Track/index.js';
 import OUTBREAK from '../../../constants/outbreak.js';
 
 const Outbreak = () => {

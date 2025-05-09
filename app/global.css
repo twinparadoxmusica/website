@@ -190,7 +190,7 @@ ul li {
 
 ul li a {
   color: #00bcd4;
-  text-decoration: none;
+  margin-bottom: 0.5rem;
 }
 
 ul li a:hover {

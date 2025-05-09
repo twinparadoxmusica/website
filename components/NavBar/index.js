@@ -8,7 +8,7 @@ const NavBar = () => {
 
   const links = [
     { path: '/', label: 'Home' },
-    { path: '/releases', label: 'Releases' },
+    { path: '/music', label: 'Music' },
     { path: '/videos', label: 'Videos' },
     { path: '/contact', label: 'Contact' },
   ];
