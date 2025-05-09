@@ -1,6 +1,5 @@
-import React from 'react';
 import PropTypes from 'prop-types';
-import SocialLinks from '../SocialLinks/index.js';
+import SocialLinks from '../SocialLinks';
 import './styles.css';
 
 const Track = ({ track: { title, soundCloudIframe, platforms } }) => {

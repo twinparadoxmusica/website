@@ -1,6 +1,5 @@
-import React from 'react';
 import Link from 'next/link';
-import SocialLinks from '../SocialLinks/index.js';
+import SocialLinks from '../SocialLinks';
 
 const Releases = () => (
   <section id="releases" className="section">

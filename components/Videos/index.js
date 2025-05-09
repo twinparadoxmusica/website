@@ -1,5 +1,4 @@
-import React from 'react';
-import SocialLinks from '../SocialLinks/index.js';
+import SocialLinks from '../SocialLinks';
 import './styles.css';
 
 const Videos = () => (

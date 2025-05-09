@@ -1,7 +1,6 @@
 /* eslint-disable no-undef */
 'use client';
 import React, { useState } from 'react';
-import fetch from 'node-fetch';
 import './styles.css';
 
 const ContactForm = () => {
