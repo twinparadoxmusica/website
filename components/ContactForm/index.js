@@ -40,7 +40,7 @@ const ContactForm = () => {
 
   return (
     <div className="contact-wrapper">
-      <h2 className="margin-bottom-sm">Contact Form</h2>
+      <h2 className="margin-bottom-sm section">Contact Form</h2>
       {submitted ? (
         <p className="success-message">
           ✅ Your message was sent successfully!
