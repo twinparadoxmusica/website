@@ -21,3 +21,17 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Ignore Next.js build output
+.next/
+
+# Ignore environment files
+.env.local
+.env.*.local
+
+# Ignore yarn and npm lock files (you should commit the lock file in most cases)
+yarn.lock
+package-lock.json
+
+# Ignore the .eslintrc.json and other configuration files that you may not want to push
+.eslintrc.json
