@@ -6,7 +6,12 @@ const Videos = () => (
     <h2 className="margin-bottom-sm">Videos</h2>
 
     <div className="margin-bottom-xs">
-      <strong>Insiders (Official Music Video)</strong>
+      <a
+        className="video-link"
+        href="https://www.youtube.com/watch?v=GEH6M5wipNk"
+      >
+        <strong>Insiders (Official Music Video)</strong>
+      </a>
       <br />
       January 2025
     </div>
@@ -23,7 +28,12 @@ const Videos = () => (
       ></iframe>
     </div>
     <div className="margin-bottom-xs">
-      <strong>Hypnotic Techno DJ Set at Hama Club</strong>
+      <a
+        className="video-link"
+        href="https://www.youtube.com/watch?v=GEH6M5wipNk"
+      >
+        <strong>Hypnotic Techno DJ Set at Hama Club</strong>
+      </a>
       <br />
       January 2025
     </div>
