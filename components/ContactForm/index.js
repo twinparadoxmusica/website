@@ -10,6 +10,7 @@ const ContactForm = () => {
     e.preventDefault();
 
     const form = e.target;
+    // eslint-disable-next-line no-undef
     const data = typeof FormData !== 'undefined' ? new FormData(form) : null;
     if (!data) {
       if (typeof window !== 'undefined') {
@@ -17,7 +18,7 @@ const ContactForm = () => {
       }
       return;
     }
-
+    // eslint-disable-next-line no-undef
     const response = await fetch(
       'https://formsubmit.co/twinparadoxmusica@gmail.com',
       {

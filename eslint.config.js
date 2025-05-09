@@ -1,5 +1,6 @@
 import js from '@eslint/js';
 import reactPlugin from 'eslint-plugin-react';
+import nextPlugin from '@next/eslint-plugin-next';
 import prettierPlugin from 'eslint-plugin-prettier';
 import babelParser from '@babel/eslint-parser';
 import globals from 'globals';
@@ -24,6 +25,12 @@ export default [
     plugins: {
       react: reactPlugin,
       prettier: prettierPlugin,
+      '@next/next': nextPlugin,
+    },
+    settings: {
+      react: {
+        version: 'detect',
+      },
     },
     rules: {
       'prettier/prettier': 'error',
