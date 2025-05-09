@@ -4,6 +4,7 @@ import './styles.css';
 const Videos = () => (
   <section id="videos" className="section">
     <h2 className="margin-bottom-sm">Videos</h2>
+
     <div className="margin-bottom-xs">
       <strong>Insiders (Official Music Video)</strong>
       <br />
