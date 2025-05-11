@@ -1,33 +1,48 @@
+import {
+  SPOTIFY,
+  SPOTIFY_LOGO,
+  APPLE_MUSIC,
+  APPLE_MUSIC_LOGO,
+  SOUNDCLOUD,
+  SOUNDCLOUD_LOGO,
+  YOUTUBE,
+  YOUTUBE_LOGO,
+  DEEZER,
+  DEEZER_LOGO,
+  BANDCAMP,
+  BANDCAMP_LOGO,
+} from './platforms.js';
+
 const platforms = [
   {
-    name: 'Spotify',
+    name: SPOTIFY,
     url: 'https://open.spotify.com/track/5SdWEDGpzt3IhXcMtuAvjc?si=690d5de4124c426a',
-    logo: '/assets/spotify.png',
+    logo: SPOTIFY_LOGO,
   },
   {
-    name: 'Apple Music',
+    name: APPLE_MUSIC,
     url: 'https://music.apple.com/us/song/insiders/1790806876',
-    logo: '/assets/applemusic.png',
+    logo: APPLE_MUSIC_LOGO,
   },
   {
-    name: 'SoundCloud',
+    name: SOUNDCLOUD,
     url: 'https://soundcloud.com/twin-paradox-musica/twin-paradox-insiders',
-    logo: '/assets/soundcloud.png',
+    logo: SOUNDCLOUD_LOGO,
   },
   {
-    name: 'YouTube',
+    name: YOUTUBE,
     url: 'https://www.youtube.com/watch?v=2VTmfk0gP8Q',
-    logo: '/assets/youtube.png',
+    logo: YOUTUBE_LOGO,
   },
   {
-    name: 'Deezer',
+    name: DEEZER,
     url: 'https://dzr.page.link/tBg86ipCYZd2A7Qy6',
-    logo: '/assets/deezer.png',
+    logo: DEEZER_LOGO,
   },
   {
-    name: 'Bandcamp',
+    name: BANDCAMP,
     url: 'https://twinparadoxmusica.bandcamp.com/album/insiders',
-    logo: '/assets/bandcamp.png',
+    logo: BANDCAMP_LOGO,
   },
 ];
 

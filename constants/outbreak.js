@@ -1,33 +1,48 @@
+import {
+  SPOTIFY,
+  SPOTIFY_LOGO,
+  APPLE_MUSIC,
+  APPLE_MUSIC_LOGO,
+  SOUNDCLOUD,
+  SOUNDCLOUD_LOGO,
+  YOUTUBE,
+  YOUTUBE_LOGO,
+  DEEZER,
+  DEEZER_LOGO,
+  BANDCAMP,
+  BANDCAMP_LOGO,
+} from './platforms.js';
+
 const platforms = [
   {
-    name: 'Spotify',
+    name: SPOTIFY,
     url: 'https://open.spotify.com/track/1lV4wtYEsYLkIlBvQOeb4f?si=14d1e3e07128492d',
-    logo: '/assets/spotify.png',
+    logo: SPOTIFY_LOGO,
   },
   {
-    name: 'Apple Music',
+    name: APPLE_MUSIC,
     url: 'https://music.apple.com/us/song/outbreak/1807299058',
-    logo: '/assets/applemusic.png',
+    logo: APPLE_MUSIC_LOGO,
   },
   {
-    name: 'SoundCloud',
+    name: SOUNDCLOUD,
     url: 'https://soundcloud.com/twin-paradox-musica/twin-paradox-outbreak',
-    logo: '/assets/soundcloud.png',
+    logo: SOUNDCLOUD_LOGO,
   },
   {
-    name: 'YouTube',
+    name: YOUTUBE,
     url: 'https://www.youtube.com/watch?v=t3NHdVsFl2c',
-    logo: '/assets/youtube.png',
+    logo: YOUTUBE_LOGO,
   },
   {
-    name: 'Deezer',
+    name: DEEZER,
     url: 'https://dzr.page.link/BBj4LriMeYPoq6YS7',
-    logo: '/assets/deezer.png',
+    logo: DEEZER_LOGO,
   },
   {
-    name: 'Bandcamp',
+    name: BANDCAMP,
     url: 'https://twinparadoxmusica.bandcamp.com/track/outbreak',
-    logo: '/assets/bandcamp.png',
+    logo: BANDCAMP_LOGO,
   },
 ];
 
