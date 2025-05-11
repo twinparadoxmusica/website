@@ -23,6 +23,7 @@ const Track = ({ track: { title, soundCloudIframe, platforms } }) => {
           <div className="platform-link" key={platform.name}>
             <a
               href={platform.url}
+              data-platform={platform.name}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-2 hover:scale-105 transition-transform py-2"
