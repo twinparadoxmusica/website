@@ -20,10 +20,13 @@ const Track = ({ track: { title, soundCloudIframe, platforms } }) => {
       </div>
       <div className="platform-links-container">
         {platforms.map((platform) => (
-          <div className="platform-link" key={platform.name}>
+          <div
+            className="platform-link"
+            key={platform.name}
+            data-platform={platform.name}
+          >
             <a
               href={platform.url}
-              data-platform={platform.name}
               target="_blank"
               rel="noopener noreferrer"
               className="platform-button flex items-center justify-center gap-2 hover:scale-105 transition-transform py-2"
