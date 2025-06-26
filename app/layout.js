@@ -222,7 +222,7 @@ const RootLayout = ({ children }) => {
               t.src=v;s=b.getElementsByTagName(e)[0];
               s.parentNode.insertBefore(t,s)}(window, document,'script',
               'https://connect.facebook.net/en_US/fbevents.js');
-              fbq('init', '1840016840116319');
+              fbq('init', '1023035406591668');
               fbq('track', 'PageView');
             `,
           }}
@@ -232,7 +232,7 @@ const RootLayout = ({ children }) => {
             height="1"
             width="1"
             style={{ display: 'none', visibility: 'hidden' }}
-            src="https://www.facebook.com/tr?id=1840016840116319&ev=PageView&noscript=1"
+            src="https://www.facebook.com/tr?id=1023035406591668&ev=PageView&noscript=1"
           />
         </noscript>
         {/* Google Tag Manager noscript */}
