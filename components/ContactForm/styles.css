@@ -1,3 +1,7 @@
+.contact-wrapper {
+  text-align: center;
+}
+
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -33,4 +37,11 @@
 .contact-prompt {
   font-size: 1rem;
   text-align: justify;
+}
+
+.twin-paradox-logo-small {
+  margin: 0 auto;
+  margin-top: 2rem;
+  height: 200px;
+  max-width: 100%;
 }

@@ -46,7 +46,6 @@ const Music = () => (
           ></iframe>
         </div>
       </li>
-
       <li>
         <div className="margin-bottom-xs">
           <a
@@ -67,6 +66,29 @@ const Music = () => (
             frameBorder="no"
             allow="autoplay"
             src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2069654668&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=true"
+          ></iframe>
+        </div>
+      </li>
+      <li>
+        <div className="margin-bottom-xs">
+          <a
+            target="_blank"
+            className="music-link"
+            href="https://soundcloud.com/twin-paradox-musica/twin-paradox-dj-set-studio-mix-raw-techno-hypnogroove-hardgroove"
+          >
+            <strong>Studio Mix (Raw Techno / Hypnogroove / Hardgroove)</strong>
+          </a>
+          <br />
+          December 2024
+        </div>
+        <div className="video-container">
+          <iframe
+            width="500"
+            height="166"
+            scrolling="no"
+            frameBorder="no"
+            allow="autoplay"
+            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2119622418&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=true"
           ></iframe>
         </div>
       </li>

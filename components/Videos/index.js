@@ -51,6 +51,29 @@ const Videos = () => (
         allowFullScreen
       ></iframe>
     </div>
+    <div className="margin-bottom-xs">
+      <a
+        target="_blank"
+        className="video-link"
+        href="https://www.youtube.com/watch?v=GEH6M5wipNk"
+      >
+        <strong>Studio Mix (Raw Techno / Hypnogroove / Hardgroove)</strong>
+      </a>
+      <br />
+      December 2024
+    </div>
+    <div className="video-container margin-bottom-sm">
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/lnWuzf8D5KI?si=qTNepOoccvXf1fsd?enablejsapi=1"
+        title="YouTube video player"
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerPolicy="strict-origin-when-cross-origin"
+        allowFullScreen
+      ></iframe>
+    </div>
     <SocialLinks />
   </section>
 );

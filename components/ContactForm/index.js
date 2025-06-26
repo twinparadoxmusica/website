@@ -64,6 +64,11 @@ const ContactForm = () => {
           <button type="submit">Send</button>
         </form>
       )}
+      <img
+        src="/assets/twin-paradox-logo-white.png"
+        alt="Twin Paradox Logo"
+        className="twin-paradox-logo-small fade-in"
+      ></img>
     </div>
   );
 };
