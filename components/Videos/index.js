@@ -1,56 +1,37 @@
 import SocialLinks from '../SocialLinks';
+import Video from './Video';
 import './styles.css';
+
+const videos = [
+  {
+    title: 'Insiders (Official Music Video)',
+    date: 'January 2025',
+    videoUrl: 'https://www.youtube.com/watch?v=GEH6M5wipNk',
+    embedUrl:
+      'https://www.youtube.com/embed/GEH6M5wipNk?si=KqaSQNbyuCt7Mbnf?enablejsapi=1',
+  },
+  {
+    title: 'Hypnotic Techno DJ Set at Hama Club',
+    date: 'January 2025',
+    videoUrl: 'https://www.youtube.com/watch?v=P361vVvKCXg',
+    embedUrl:
+      'https://www.youtube.com/embed/P361vVvKCXg?si=KqaSQNbyuCt7Mbnf?enablejsapi=1',
+  },
+  {
+    title: 'Studio Mix (Raw Techno / Hypnogroove / Hardgroove)',
+    date: 'December 2024',
+    videoUrl: 'https://www.youtube.com/watch?v=lnWuzf8D5KI',
+    embedUrl:
+      'https://www.youtube.com/embed/lnWuzf8D5KI?si=KqaSQNbyuCt7Mbnf?enablejsapi=1',
+  },
+];
 
 const Videos = () => (
   <section id="videos" className="section">
-    <h2 className="margin-bottom-sm">Videos</h2>
-
-    <div className="margin-bottom-xs">
-      <a
-        target="_blank"
-        className="video-link"
-        href="https://www.youtube.com/watch?v=GEH6M5wipNk"
-      >
-        <strong>Insiders (Official Music Video)</strong>
-      </a>
-      <br />
-      January 2025
-    </div>
-    <div className="video-container">
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/GEH6M5wipNk?si=KqaSQNbyuCt7Mbnf?enablejsapi=1"
-        title="YouTube video player"
-        frameBorder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerPolicy="strict-origin-when-cross-origin"
-        allowFullScreen
-      ></iframe>
-    </div>
-    <div className="margin-bottom-xs">
-      <a
-        target="_blank"
-        className="video-link"
-        href="https://www.youtube.com/watch?v=GEH6M5wipNk"
-      >
-        <strong>Hypnotic Techno DJ Set at Hama Club</strong>
-      </a>
-      <br />
-      January 2025
-    </div>
-    <div className="video-container margin-bottom-sm">
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/P361vVvKCXg?si=5we2CFduNi58eQ8L?enablejsapi=1"
-        title="YouTube video player"
-        frameBorder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerPolicy="strict-origin-when-cross-origin"
-        allowFullScreen
-      ></iframe>
-    </div>
+    <h2 className="margin-bottom-sm">Music Videos</h2>
+    {videos.map((video, index) => (
+      <Video key={index} {...video} />
+    ))}
     <SocialLinks />
   </section>
 );

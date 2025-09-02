@@ -1,5 +1,8 @@
+'use client';
+
 import PropTypes from 'prop-types';
 import SocialLinks from '../SocialLinks';
+import Bio from './Bio';
 import './styles.css';
 
 const About = ({ hideText }) => (
@@ -11,24 +14,8 @@ const About = ({ hideText }) => (
     ></img>
     {hideText ? null : (
       <div className="margin-bottom-xs">
-        <p className="description-text">
-          Twin Paradox, an Argentinian electronic music duo based in Geneva, was
-          formed in 2023 by Mirko Hrubik and Ezequiel Cappellano. They create
-          hypnotic and energetic <b>Techno</b> with <b>Rock/Metal</b>{' '}
-          influences, using analog and digital hardware with instruments like
-          guitar, voice and synthesizers, performing both <b>Live Sets</b> and{' '}
-          <b>DJ formats</b>.
-        </p>
         <p className="margin-bottom-sm">
-          Read full bio at{' '}
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            data-name="resident-advisor"
-            href="https://ra.co/dj/twinparadox/biography"
-          >
-            Resident Advisor
-          </a>
+          <Bio />
         </p>
         <SocialLinks />
       </div>
