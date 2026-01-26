@@ -3,13 +3,24 @@
 }
 
 .bio-container {
-  max-width: 900px;
+  max-width: 700px;
   margin: 0 auto;
 }
 
 .bio-container p {
   text-align: justify;
   padding: 0 1rem;
+  font-size: 1rem;
+  @media (max-width: 480px) {
+    font-size: 0.8rem;
+  }
+}
+
+.short-bio p {
+  font-size: 1.1rem;
+  @media (max-width: 480px) {
+    font-size: 0.8rem;
+  }
 }
 
 .bio-text {

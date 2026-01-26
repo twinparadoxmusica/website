@@ -6,13 +6,13 @@ const tracks = [
   {
     title: 'OUTBREAK',
     date: 'April 2025',
-    trackSoundCloudLink: '/music/outbreak',
+    trackSoundCloudLink: '/releases/outbreak',
     trackSoundCloudId: '2070386344',
   },
   {
     title: 'INSIDERS',
     date: 'January 2025',
-    trackSoundCloudLink: '/music/insiders',
+    trackSoundCloudLink: '/releases/insiders',
     trackSoundCloudId: '2017289757',
   },
 ];
