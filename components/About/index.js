@@ -27,7 +27,7 @@ const About = ({ displayVideo = true }) => (
           Geneva, Switzerland
         </p>
         <Video {...liveSetVideo} width={800} height={200} />
-        <div className="margin-bottom-sm">
+        <div className="margin-bottom-ssm">
           <p className="bio-text">
             &ldquo;TWISTING ANCIENT DESIRES
             <br />

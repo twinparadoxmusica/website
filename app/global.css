@@ -9,14 +9,7 @@ body {
   height: 100%;
 }
 
-body {
-  margin: 0;
-  color: white;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  font-family: 'Space Grotesk', sans-serif;
-  background-size: cover;
+html {
   background: linear-gradient(
     180deg,
     #000000 0%,
@@ -26,18 +19,15 @@ body {
   );
 }
 
-.background-texture {
-  position: fixed;
-  inset: 0;
-  z-index: -1;
-  pointer-events: none;
-  background-image: url('/assets/paint-texture-black-and-white.jpg');
+body {
+  margin: 0;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-family: 'Space Grotesk', sans-serif;
   background-size: cover;
-  opacity: 0.1;
-  display: block;
-  @media (max-width: 480px) {
-    display: none;
-  }
+  background-image: url('/assets/twin-paradox-dark-purple-background-large.jpg');
 }
 
 canvas {
@@ -95,10 +85,17 @@ a {
 .margin-bottom-xs {
   margin-bottom: 20px;
 }
+.margin-bottom-ssm {
+  margin-bottom: 30px;
+}
+
 .margin-bottom-sm {
   margin-bottom: 40px;
 }
 
+.margin-bottom-md {
+  margin-bottom: 50px;
+}
 .margin-bottom-lg {
   margin-bottom: 60px;
 }

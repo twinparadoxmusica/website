@@ -4,7 +4,6 @@ import NavBar from '../NavBar'; // Adjust the path if needed
 
 const Layout = ({ children }) => (
   <>
-    <div className="background-texture" />
     <NavBar />
     <main className="layout-container">{children}</main>
     <footer>
