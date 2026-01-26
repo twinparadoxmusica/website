@@ -1,9 +1,18 @@
 .video-container {
   display: flex;
   justify-content: center;
-  margin-bottom: 50px;
 }
 
 .video-link {
   color: #4dc6d6;
+}
+
+.video-iframe {
+  width: 700px;
+  height: 400px;
+
+  @media (max-width: 480px) {
+    width: 400px;
+    height: 200px;
+  }
 }

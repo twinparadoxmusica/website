@@ -6,6 +6,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  height: 100%;
 }
 
 body {
@@ -25,7 +26,7 @@ body {
   );
 }
 
-body::before {
+html::before {
   content: '';
   position: fixed;
   top: 0;
@@ -33,7 +34,7 @@ body::before {
   width: 100%;
   height: 100%;
   pointer-events: none;
-  /* background-image: url('/assets/paint-texture-black-and-white.jpg');
+  background-image: url('/assets/paint-texture-black-and-white.jpg');
   opacity: 0.1; /* clave */
   z-index: -1;
   background-size: cover;
@@ -72,7 +73,6 @@ a {
 }
 
 .section {
-  padding-top: 20px;
   max-width: 1000px;
   margin: 0 auto;
   text-align: center;
@@ -139,7 +139,7 @@ a {
 #about {
   text-align: center;
   .twin-paradox-logo {
-    width: 40%; /* Image will take up 100% of its container's width */
+    width: 60%; /* Image will take up 100% of its container's width */
     height: auto; /* Maintain the aspect ratio */
     opacity: 0.5;
   }
@@ -227,16 +227,17 @@ ul li a:hover {
 
 iframe {
   max-width: 100%;
+  border-radius: 8px;
 }
 
 footer {
   color: white;
   text-align: center;
-  padding: 20px;
+  padding: 0 1rem;
   margin-top: 0;
 }
 footer p {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   opacity: 0.8;
 }
 

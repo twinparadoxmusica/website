@@ -7,11 +7,7 @@ const Layout = ({ children }) => (
     <NavBar />
     <main className="layout-container">{children}</main>
     <footer>
-      <p>
-        &copy; 2026 Twin Paradox
-        <br />
-        All rights reserved
-      </p>
+      <p>&copy; 2026 Twin Paradox - All Rights Reserved</p>
     </footer>
   </>
 );

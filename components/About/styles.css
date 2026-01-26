@@ -18,11 +18,14 @@
   text-align: center;
   margin: 0 auto;
   font-family: 'Cinzel', sans-serif;
+  @media (max-width: 480px) {
+    font-size: 1.2rem;
+  }
 }
 
 .presentation-title {
   font-family: 'Cinzel', sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 .presentation-title-lg {
@@ -33,5 +36,4 @@
 .presentation-subtitle {
   font-family: 'Cinzel', sans-serif;
   font-size: 0.9rem;
-  margin-bottom: 20px;
 }

@@ -1,6 +1,6 @@
 import './styles.css';
 
-const Videos = ({ title, date, videoUrl, embedUrl, width, height }) => (
+const Videos = ({ title, date, videoUrl, embedUrl }) => (
   <div className="video">
     {title ? (
       <div className="margin-bottom-xs">
@@ -11,10 +11,9 @@ const Videos = ({ title, date, videoUrl, embedUrl, width, height }) => (
         {date}
       </div>
     ) : null}
-    <div className="video-container margin-bottom-sm">
+    <div className="video-container margin-bottom-xs">
       <iframe
-        width={width || '560'}
-        height={height || '315'}
+        className="video-iframe"
         src={embedUrl}
         title="YouTube video player"
         frameBorder="0"

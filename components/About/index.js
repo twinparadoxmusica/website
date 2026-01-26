@@ -16,20 +16,22 @@ const About = ({ displayVideo = true }) => (
     <img
       src="/assets/twin-paradox-logo-purple.png"
       alt="Twin Paradox Logo"
-      className="twin-paradox-logo fade-in margin-bottom-xs"
+      className="twin-paradox-logo fade-in margin-bottom-xxs"
     ></img>
     {displayVideo && (
       <>
         <p className="presentation-title margin-bottom-none">
           <b>TECHNO ROCK</b> LIVE SET
         </p>
-        <p className="presentation-subtitle margin-bottom-xs">
+        <p className="presentation-subtitle margin-bottom-xxs">
           Geneva, Switzerland
         </p>
-        <Video {...liveSetVideo} width={800} height={230} />
-        <div className="margin-bottom-xl">
+        <Video {...liveSetVideo} width={800} height={200} />
+        <div className="margin-bottom-sm">
           <p className="bio-text">
-            "TWISTING ANCIENT DESIRES SHALL GIVE NO MERCY"
+            &ldquo;TWISTING ANCIENT DESIRES
+            <br />
+            SHALL GIVE NO MERCY&rdquo;
           </p>
         </div>
       </>
