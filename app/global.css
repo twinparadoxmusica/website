@@ -29,6 +29,7 @@ body {
   background-size: cover;
   background-image: url('/assets/twin-paradox-dark-purple-background-large.jpg');
   background-position: center;
+  background-attachment: local;
 }
 
 canvas {
