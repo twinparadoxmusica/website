@@ -34,6 +34,10 @@ body {
   background-image: url('/assets/paint-texture-black-and-white.jpg');
   background-size: cover;
   opacity: 0.1;
+  display: block;
+  @media (max-width: 480px) {
+    display: none;
+  }
 }
 
 canvas {
