@@ -5,7 +5,10 @@ const Collage = () => {
     <div className="collage-container">
       <div className="collage-vertical">
         <div className="collage-top">
-          <img src="/assets/collage/twin-paradox-dj-set.jpg" alt="Horizontal" />
+          <img
+            src="/assets/collage/twin-paradox-live-set-castle.jpg"
+            alt="Horizontal"
+          />
         </div>
         <div className="collage-bottom">
           <img

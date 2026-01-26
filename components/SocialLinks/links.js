@@ -1,16 +1,5 @@
 const links = [
   {
-    url: 'mailto:twinparadoxmusica@gmail.com',
-    name: 'mail-icon',
-    icon: ({ className }) => (
-      <img
-        src="https://img.icons8.com/?size=100&id=86885&format=png&color=FFFFFF"
-        alt="Mail"
-        className={className}
-      />
-    ),
-  },
-  {
     url: 'https://www.youtube.com/@_twinparadox',
     name: 'youtube',
     icon: ({ className }) => (

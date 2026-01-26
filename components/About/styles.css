@@ -3,9 +3,35 @@
 }
 
 .bio-container {
-  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .bio-container p {
-  background-color: black;
+  text-align: justify;
+  padding: 0 1rem;
+}
+
+.bio-text {
+  font-size: 1.5rem;
+  max-width: 700px;
+  text-align: center;
+  margin: 0 auto;
+  font-family: 'Cinzel', sans-serif;
+}
+
+.presentation-title {
+  font-family: 'Cinzel', sans-serif;
+  font-size: 1.3rem;
+}
+
+.presentation-title-lg {
+  font-family: 'Cinzel', sans-serif;
+  font-size: 1.8rem;
+}
+
+.presentation-subtitle {
+  font-family: 'Cinzel', sans-serif;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
 }

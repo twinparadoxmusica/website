@@ -1,14 +1,16 @@
 import Layout from '../../components/Layout';
-import Contact from '../../components/ContactForm';
+import Collage from '../../components/Collage';
+import Bio from '../../components/Bio';
 import About from '../../components/About';
 
-const ContactPage = () => {
+const VideosPage = () => {
   return (
     <Layout>
       <About displayVideo={false} />
-      <Contact />
+      <Bio />
+      <Collage />
     </Layout>
   );
 };
 
-export default ContactPage;
+export default VideosPage;

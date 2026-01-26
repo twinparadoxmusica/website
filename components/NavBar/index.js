@@ -7,10 +7,10 @@ const NavBar = () => {
   const pathname = usePathname();
 
   const links = [
-    { path: '/', label: 'Home' },
-    { path: '/music', label: 'Music' },
-    { path: '/videos', label: 'Videos' },
-    { path: '/contact', label: 'Contact' },
+    { path: '/', label: 'HOME' },
+    { path: '/releases', label: 'RELEASES' },
+    { path: '/about', label: 'ABOUT' },
+    { path: '/contact', label: 'CONTACT' },
   ];
 
   return (

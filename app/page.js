@@ -7,7 +7,6 @@ const App = () => {
   return (
     <Layout>
       <About />
-      <Collage />
       <Contact />
     </Layout>
   );

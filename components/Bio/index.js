@@ -67,7 +67,7 @@ const Bio = () => {
   );
   return (
     <div className="bio-container">
-      <p className="text-base leading-7 text-neutral-800">{shortBio}</p>
+      <p>{shortBio}</p>
       {expanded ? <>{fullBioParagraphs}</> : null}
     </div>
   );

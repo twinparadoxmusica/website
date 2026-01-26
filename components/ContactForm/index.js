@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 'use client';
 import React, { useState } from 'react';
 import './styles.css';
@@ -10,7 +9,7 @@ const ContactForm = () => {
     e.preventDefault();
 
     const form = e.target;
-    // eslint-disable-next-line no-undef
+
     const data = typeof FormData !== 'undefined' ? new FormData(form) : null;
     if (!data) {
       if (typeof window !== 'undefined') {
@@ -18,7 +17,7 @@ const ContactForm = () => {
       }
       return;
     }
-    // eslint-disable-next-line no-undef
+
     const response = await fetch(
       'https://formsubmit.co/twinparadoxmusica@gmail.com',
       {
@@ -32,7 +31,6 @@ const ContactForm = () => {
       form.reset();
     } else {
       if (typeof window !== 'undefined') {
-        // eslint-disable-next-line no-undef
         alert('Failed to send message. Please try again.');
       }
     }
@@ -40,7 +38,9 @@ const ContactForm = () => {
 
   return (
     <div className="contact-wrapper">
-      <h2 className="margin-bottom-sm section">Contact Form</h2>
+      <h2 className="margin-bottom-sm section presentation-title-lg">
+        CONTACT FORM
+      </h2>
       {submitted ? (
         <p className="success-message">
           ✅ Your message was sent successfully!
