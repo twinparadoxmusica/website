@@ -4,7 +4,7 @@ const Videos = ({ title, date, videoUrl, embedUrl }) => (
   <div className="video">
     {title ? (
       <div className="margin-bottom-20">
-        <a target="_blank" className="video-link" href={videoUrl}>
+        <a target="_blank" className="font-color-light-purple" href={videoUrl}>
           <strong>{title}</strong>
         </a>
         <br />

@@ -1,3 +1,27 @@
+#about {
+  text-align: center;
+  .twin-paradox-logo {
+    width: 60%;
+    height: auto;
+    opacity: 0.5;
+  }
+
+  @media (max-width: 768px) {
+    .twin-paradox-logo {
+      width: 80%;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .twin-paradox-logo {
+      width: 100%;
+    }
+    p {
+      max-width: 100%;
+    }
+  }
+}
+
 .description-text {
   background-color: black;
 }

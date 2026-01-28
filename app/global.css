@@ -43,6 +43,7 @@ canvas {
 
 a {
   color: white;
+  text-decoration: none;
   &:hover,
   &:focus {
     color: white;
@@ -144,32 +145,6 @@ a {
   }
 }
 
-#about {
-  text-align: center;
-  .twin-paradox-logo {
-    width: 60%; /* Image will take up 100% of its container's width */
-    height: auto; /* Maintain the aspect ratio */
-    opacity: 0.5;
-  }
-
-  /* For medium-sized screens (e.g., tablets) */
-  @media (max-width: 768px) {
-    .twin-paradox-logo {
-      width: 80%; /* Adjust width to 80% for medium screens */
-    }
-  }
-
-  /* For smaller screens (e.g., mobile devices) */
-  @media (max-width: 480px) {
-    .twin-paradox-logo {
-      width: 100%; /* Adjust width to 100% for smaller screens */
-    }
-    p {
-      max-width: 100%;
-    }
-  }
-}
-
 .w-4,
 .h-4 {
   width: 1rem;
@@ -228,7 +203,6 @@ ul li {
 }
 
 ul li a {
-  color: #4dc6d6;
   margin-bottom: 0.5rem;
 }
 
@@ -256,7 +230,6 @@ footer p {
 }
 
 button {
-  color: #4dc6d6;
   background: none;
   border: none;
   padding: 0;
@@ -322,4 +295,12 @@ button {
   .layout-container {
     padding: 1rem 0.75rem;
   }
+}
+
+.font-color-white {
+  color: white;
+}
+
+.font-color-light-purple {
+  color: rgb(182, 142, 190);
 }

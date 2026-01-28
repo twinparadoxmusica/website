@@ -3,11 +3,11 @@ import './styles.css';
 const Collage = () => {
   return (
     <div className="collage-container">
-      <h2 className="presentation-title">
+      <p className="presentation-title">
         Twisting ancient musical forms
         <br />
         through a modern sonic narrative
-      </h2>
+      </p>
       <div className="music-bio">
         <p>
           Twin Paradox embodies the intersection of raw rock energy, theatrical
@@ -24,11 +24,11 @@ const Collage = () => {
       <div className="music-bio">
         <p>
           Their music fuses guitars and drums with synths and machines,
-          unfolding through narrative, theatrical progressions that build and
-          release tension like a live show. Twin Paradox develops a language
-          they call TechnoRock — a hybrid aesthetic where riffs, distorted
-          textures and club-driven sound design merge into hypnotic, physical
-          tracks built for movement and impact.
+          unfolding through narrative, dramatic arcs that build and release
+          tension like a live show. Twin Paradox develops a language they call
+          TechnoRock — a hybrid aesthetic where riffs, distorted textures and
+          club-driven sound design merge into hypnotic, physical tracks built
+          for movement and impact.
         </p>
       </div>
       <div className="collage-vertical">
@@ -47,18 +47,18 @@ const Collage = () => {
           machine-driven language of electronic sound.
         </p>
       </div>
-      <div className="collage-vertical">
-        <img
-          src="/assets/collage/twin-paradox-live-set.jpg"
-          alt="Bottom Horizontal"
-        />
-      </div>
       <div className="music-bio">
         <p>
           Twin Paradox perform in Live Set format. Their performances are built
           in in real time, where machines and instruments are played live,
           driving bodies, tension and repetition into a shared ritual.
         </p>
+      </div>
+      <div className="collage-vertical">
+        <img
+          src="/assets/twin-paradox-profile-picture-castle.jpg"
+          alt="Horizontal"
+        />
       </div>
     </div>
   );

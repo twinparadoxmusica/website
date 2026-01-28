@@ -5,11 +5,11 @@ import './styles.css';
 
 const ContactForm = () => (
   <div className="contact-wrapper section margin-top-10">
-    <div className="margin-bottom-40">
-      <p className="margin-bottom-10">
-        For bookings, press inquiries and professional collaborations:
+    <div className="margin-bottom-30">
+      <p className="margin-bottom-10 font-size-sm font-color-light-purple">
+        BOOKING - PRESS - COLLABORATIONS
       </p>
-      <p className="margin-bottom-40 font-size-md">
+      <p className="font-size-md">
         <a href="mailto:twinparadoxmusica@gmail.com">
           twinparadoxmusica@gmail.com
         </a>

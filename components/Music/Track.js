@@ -6,7 +6,7 @@ import './styles.css';
 const Track = ({ title, date, trackSoundCloudLink, artwork }) => (
   <div className="track">
     <div className="margin-bottom-20">
-      <Link href={trackSoundCloudLink}>
+      <Link className="font-color-light-purple" href={trackSoundCloudLink}>
         <strong>{title}</strong>
       </Link>
       <br />
@@ -16,8 +16,8 @@ const Track = ({ title, date, trackSoundCloudLink, artwork }) => (
       <Image
         src={artwork}
         alt={`${title} artwork`}
-        width={300}
-        height={300}
+        width={250}
+        height={250}
         priority
       />
     </div>
