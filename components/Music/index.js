@@ -4,16 +4,25 @@ import './styles.css';
 
 const tracks = [
   {
+    title: 'TECHNOROCK',
+    date: 'February 2026',
+    trackSoundCloudLink: '/releases/techno-rock',
+    trackSoundCloudId: '2017289757',
+    artwork: '/assets/twin-paradox-techno-rock-artwork.jpg',
+  },
+  {
     title: 'OUTBREAK',
     date: 'April 2025',
     trackSoundCloudLink: '/releases/outbreak',
     trackSoundCloudId: '2070386344',
+    artwork: '/assets/twin-paradox-outbreak-album-cover.jpg',
   },
   {
     title: 'INSIDERS',
     date: 'January 2025',
     trackSoundCloudLink: '/releases/insiders',
     trackSoundCloudId: '2017289757',
+    artwork: '/assets/twin-paradox-insiders-album-cover.jpg',
   },
 ];
 

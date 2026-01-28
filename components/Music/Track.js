@@ -1,7 +1,9 @@
 import Link from 'next/link';
+import Image from 'next/image';
+
 import './styles.css';
 
-const Track = ({ title, date, trackSoundCloudLink, trackSoundCloudId }) => (
+const Track = ({ title, date, trackSoundCloudLink, artwork }) => (
   <div className="track">
     <div className="margin-bottom-xs">
       <Link href={trackSoundCloudLink}>
@@ -11,14 +13,13 @@ const Track = ({ title, date, trackSoundCloudLink, trackSoundCloudId }) => (
       {date}
     </div>
     <div className="track-container">
-      <iframe
-        width="500"
-        height="166"
-        scrolling="no"
-        frameBorder="no"
-        allow="autoplay"
-        src={`https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/${trackSoundCloudId}&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false`}
-      ></iframe>
+      <Image
+        src={artwork}
+        alt={`${title} artwork`}
+        width={300}
+        height={300}
+        priority
+      />
     </div>
   </div>
 );

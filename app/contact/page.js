@@ -1,11 +1,11 @@
 import Layout from '../../components/Layout';
 import Contact from '../../components/ContactForm';
-import About from '../../components/About';
+import Home from '../../components/Home';
 
 const ContactPage = () => {
   return (
     <Layout>
-      <About displayVideo={false} />
+      <Home displayVideo={false} />
       <Contact />
     </Layout>
   );

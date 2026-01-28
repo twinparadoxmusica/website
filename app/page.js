@@ -1,5 +1,4 @@
-import About from '../components/About';
-import Collage from '../components/Collage';
+import About from '../components/Home';
 import Contact from '../components/ContactLinks';
 import Layout from '../components/Layout';
 

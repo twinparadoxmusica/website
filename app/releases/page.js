@@ -1,14 +1,14 @@
 import Layout from '../../components/Layout';
 import Music from '../../components/Music';
 import Videos from '../../components/Videos';
-import About from '../../components/About';
-import Bio from '../../components/Bio';
+import Home from '../../components/Home';
+import MusicBio from '../../components/MusicBio';
 
 const ReleasesPage = () => {
   return (
     <Layout>
-      <About displayVideo={false} />
-      <Bio />
+      <Home displayVideo={false} />
+      <MusicBio />
       <Music />
       <Videos />
     </Layout>

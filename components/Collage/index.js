@@ -3,25 +3,48 @@ import './styles.css';
 const Collage = () => {
   return (
     <div className="collage-container">
+      <h2 className="presentation-title">
+        Twisting ancient musical forms
+        <br />
+        through a modern sonic narrative
+      </h2>
+      <div className="music-bio">
+        <p>
+          Twin Paradox embodies the intersection of raw rock energy, theatrical
+          progressions and hypnotic techno precision, shaping music as a
+          physical and performative experience.
+        </p>
+      </div>
       <div className="collage-vertical">
         <img
           src="/assets/collage/twin-paradox-live-set-castle.jpg"
           alt="Horizontal"
         />
       </div>
-      <div className="bio-container">
+      <div className="music-bio">
+        <p>
+          Their music fuses guitars and drums with synths and machines,
+          unfolding through narrative, theatrical progressions that build and
+          release tension like a live show. Twin Paradox develops a language
+          they call TechnoRock — a hybrid aesthetic where riffs, distorted
+          textures and club-driven sound design merge into hypnotic, physical
+          tracks built for movement and impact.
+        </p>
+      </div>
+      <div className="collage-vertical">
+        <img
+          src="/assets/twin-paradox-playing-live-set-castle.jpg"
+          alt="Horizontal"
+        />
+      </div>
+      <div className="music-bio">
         <p>
           Twin Paradox was born from the collaboration of two musicians who have
           known each other since childhood, sharing a background rooted in rock,
-          electronic music and academic musical training.{' '}
-        </p>
-        <p>
-          After reuniting in Europe in 2020, they developed a project that
-          merges both worlds: the physical energy of live performance and the
-          architectural approach of electronic sound. Now based in Geneva, Twin
-          Paradox produces, rehearses and performs in various formats,
-          constantly exploring a distinct identity at the crossroads of techno
-          and rock.
+          electronic music and academic musical training. After reuniting in
+          Europe in 2023, they began developing a common project that merges
+          both worlds: the raw energy of live performance and the structured,
+          machine-driven language of electronic sound.
         </p>
       </div>
       <div className="collage-vertical">
@@ -30,32 +53,13 @@ const Collage = () => {
           alt="Bottom Horizontal"
         />
       </div>
-      <div className="bio-container">
+      <div className="music-bio">
         <p>
-          Ezequiel, a multi-instrumentalist composer and arranger, began
-          learning various instruments at age 12 and played in rock bands before
-          moving to Switzerland in 2015. He studied at the Conservatoire
-          Populaire de Musique, Danse et Théâtre of Geneva and earned Bachelor’s
-          and Master’s degrees in contemporary music composition from the
-          Hochschule der Künste Bern. He has been involved in various musical
-          projects spanning contemporary, classical, tango, symphonic rock,
-          bossa-nova, jazz, Sephardic music, cumbia, and Hindustani classical
-          music.
-        </p>
-        <p>
-          Mirko, a software engineer, also started his musical journey at age 12
-          in the same workshop as Ezequiel. He has been DJing and producing
-          electronic music since 2017, playing in his hometown and other cities
-          in Argentina, and later continued in Barcelona, where he completed a
-          sound technician course and a Master’s degree in architectural
-          acoustics.
+          Twin Paradox perform in Live Set format. Their performances are built
+          in in real time, where machines and instruments are played live,
+          driving bodies, tension and repetition into a shared ritual.
         </p>
       </div>
-      See more photos on our{' '}
-      <a target="_blank" href="https://www.instagram.com/_twinparadox/">
-        instagram page
-      </a>
-      !
     </div>
   );
 };

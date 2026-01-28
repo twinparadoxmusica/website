@@ -1,13 +1,11 @@
 import Layout from '../../components/Layout';
 import Collage from '../../components/Collage';
-import Bio from '../../components/Bio';
-import About from '../../components/About';
+import Home from '../../components/Home';
 
 const VideosPage = () => {
   return (
     <Layout>
-      <About displayVideo={false} />
-      <Bio />
+      <Home displayVideo={false} />
       <Collage />
     </Layout>
   );

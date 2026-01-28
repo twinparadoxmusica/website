@@ -2,7 +2,7 @@
 
 import PropTypes from 'prop-types';
 import SocialLinks from '../SocialLinks';
-import Bio from '../Bio';
+import Bio from '../MusicBio';
 import Video from '../Videos/Video';
 import './styles.css';
 
@@ -20,20 +20,21 @@ const About = ({ displayVideo = true }) => (
     ></img>
     {displayVideo && (
       <>
-        <p className="presentation-title margin-bottom-none">
-          <b>TECHNO ROCK</b> LIVE SET
-        </p>
-        <p className="presentation-subtitle margin-bottom-xxs">
-          Geneva, Switzerland
-        </p>
-        <Video {...liveSetVideo} width={800} height={200} />
-        <div className="margin-bottom-ssm">
+        <div className="margin-bottom-xs">
           <p className="bio-text">
             &ldquo;TWISTING ANCIENT DESIRES
             <br />
             SHALL GIVE NO MERCY&rdquo;
           </p>
         </div>
+        <Video {...liveSetVideo} width={800} height={200} />
+
+        <p className="presentation-title margin-bottom-5">
+          HYBRID LIVE PERFORMANCE
+        </p>
+        <p className="presentation-subtitle margin-bottom-ssm">
+          Geneva, Switzerland
+        </p>
       </>
     )}
   </section>

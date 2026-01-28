@@ -10,13 +10,10 @@ body {
 }
 
 html {
-  background: linear-gradient(
-    180deg,
-    #000000 0%,
-    #1b0427 30%,
-    #2b0a3d 50%,
-    #000000 100%
-  );
+  background-size: cover;
+  background-image: url('/assets/twin-paradox-dark-purple-background-large.jpg');
+  background-position: center;
+  background-attachment: local;
 }
 
 body {
@@ -26,10 +23,13 @@ body {
   align-items: center;
   position: relative;
   font-family: 'Space Grotesk', sans-serif;
-  background-size: cover;
-  background-image: url('/assets/twin-paradox-dark-purple-background-large.jpg');
-  background-position: center;
-  background-attachment: local;
+  background: linear-gradient(
+    180deg,
+    #000000aa 0%,
+    #1b042750 30%,
+    #2b0a3d33 50%,
+    #00000042 100%
+  );
 }
 
 canvas {
@@ -65,16 +65,20 @@ a {
 }
 
 .section {
-  max-width: 1000px;
+  max-width: 900px;
   margin: 0 auto;
   text-align: center;
 }
 
 .section-no-padding {
   padding: 0;
-  max-width: 1000px;
+  max-width: 900px;
   margin: 0 auto;
   text-align: center;
+}
+
+.margin-bottom-5 {
+  margin-bottom: 5px;
 }
 
 .margin-bottom-xxs {

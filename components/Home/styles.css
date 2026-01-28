@@ -2,27 +2,6 @@
   background-color: black;
 }
 
-.bio-container {
-  max-width: 700px;
-  margin: 0 auto;
-}
-
-.bio-container p {
-  text-align: justify;
-  padding: 0 1rem;
-  font-size: 1rem;
-  @media (max-width: 480px) {
-    font-size: 0.8rem;
-  }
-}
-
-.short-bio p {
-  font-size: 1.1rem;
-  @media (max-width: 480px) {
-    font-size: 0.8rem;
-  }
-}
-
 .bio-text {
   font-size: 1.5rem;
   max-width: 700px;
@@ -30,13 +9,16 @@
   margin: 0 auto;
   font-family: 'Cinzel', sans-serif;
   @media (max-width: 480px) {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 }
 
 .presentation-title {
   font-family: 'Cinzel', sans-serif;
   font-size: 1.2rem;
+  @media (max-width: 480px) {
+    font-size: 1.1rem;
+  }
 }
 
 .presentation-title-lg {
@@ -46,5 +28,8 @@
 
 .presentation-subtitle {
   font-family: 'Cinzel', sans-serif;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
+  @media (max-width: 480px) {
+    font-size: 0.8rem;
+  }
 }
