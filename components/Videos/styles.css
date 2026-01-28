@@ -16,3 +16,7 @@
     height: 200px;
   }
 }
+
+.video-title {
+  text-transform: uppercase;
+}

@@ -1,14 +1,18 @@
 import './styles.css';
 
 const Videos = ({ title, date, videoUrl, embedUrl }) => (
-  <div className="video">
+  <div className="video  margin-bottom-40">
     {title ? (
       <div className="margin-bottom-20">
-        <a target="_blank" className="font-color-light-purple" href={videoUrl}>
+        <a
+          target="_blank"
+          className="video-title font-color-light-purple"
+          href={videoUrl}
+        >
           <strong>{title}</strong>
         </a>
         <br />
-        {date}
+        <p className="track-date">{date}</p>
       </div>
     ) : null}
     <div className="video-container margin-bottom-20">

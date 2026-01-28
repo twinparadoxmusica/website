@@ -3,3 +3,92 @@
   margin-bottom: 20px;
   text-align: center;
 }
+
+/* GRID: 3 en desktop, 1 en mobile */
+.tracks-grid {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  display: grid;
+  gap: 28px;
+}
+
+@media (min-width: 900px) {
+  .tracks-grid {
+    grid-template-columns: repeat(3, 1fr);
+    align-items: start;
+  }
+}
+
+.track-item {
+  margin: 0; /* por si venía el margin-bottom */
+}
+
+/* CARD */
+.track-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* ARTWORK CLICKABLE */
+.track-artwork-link {
+  display: block;
+  width: 100%;
+  max-width: 360px; /* ajustá a tu layout */
+  border-radius: 14px;
+  overflow: hidden;
+  cursor: pointer;
+  transform: translateZ(0);
+}
+
+.track-artwork {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition:
+    transform 180ms ease,
+    filter 180ms ease;
+}
+
+.track-artwork-link:hover .track-artwork {
+  transform: scale(1.04);
+  filter: contrast(1.05);
+}
+
+/* TEXT */
+.track-title {
+  margin: 14px 0 4px;
+}
+
+.track-date {
+  margin: 0 0 14px;
+  opacity: 0.85;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+/* CTA BUTTON/LINK */
+.track-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px 14px;
+  border-radius: 8px;
+  text-decoration: none;
+
+  border: 1px solid rgba(173, 108, 229, 0.35);
+  background: rgb(68, 17, 116);
+  backdrop-filter: blur(6px);
+
+  font-size: 14px;
+  letter-spacing: 0.02em;
+}
+
+.track-cta:hover {
+  border-color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}

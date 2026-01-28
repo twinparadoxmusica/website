@@ -302,5 +302,6 @@ button {
 }
 
 .font-color-light-purple {
-  color: rgb(182, 142, 190);
+  color: rgb(178, 109, 220);
+  text-shadow: 0 1px 3px rgb(0, 0, 0);
 }
