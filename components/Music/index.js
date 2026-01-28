@@ -29,9 +29,9 @@ const tracks = [
 const Music = () => (
   <section id="music" className="section">
     <SocialLinks onlyMusicIcons />
-    <ul className="margin-bottom-sm">
+    <ul className="margin-bottom-40">
       {tracks.map((track, index) => (
-        <li key={index} className="margin-bottom-xs">
+        <li key={index} className="margin-bottom-20">
           <Track {...track} />
         </li>
       ))}

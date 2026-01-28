@@ -3,7 +3,7 @@ import './styles.css';
 const Videos = ({ title, date, videoUrl, embedUrl }) => (
   <div className="video">
     {title ? (
-      <div className="margin-bottom-xs">
+      <div className="margin-bottom-20">
         <a target="_blank" className="video-link" href={videoUrl}>
           <strong>{title}</strong>
         </a>
@@ -11,7 +11,7 @@ const Videos = ({ title, date, videoUrl, embedUrl }) => (
         {date}
       </div>
     ) : null}
-    <div className="video-container margin-bottom-xs">
+    <div className="video-container margin-bottom-20">
       <iframe
         className="video-iframe"
         src={embedUrl}

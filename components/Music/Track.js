@@ -5,7 +5,7 @@ import './styles.css';
 
 const Track = ({ title, date, trackSoundCloudLink, artwork }) => (
   <div className="track">
-    <div className="margin-bottom-xs">
+    <div className="margin-bottom-20">
       <Link href={trackSoundCloudLink}>
         <strong>{title}</strong>
       </Link>

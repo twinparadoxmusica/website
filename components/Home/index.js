@@ -16,11 +16,11 @@ const About = ({ displayVideo = true }) => (
     <img
       src="/assets/twin-paradox-logo-purple.png"
       alt="Twin Paradox Logo"
-      className="twin-paradox-logo fade-in margin-bottom-xxs"
+      className="twin-paradox-logo fade-in margin-bottom-10"
     ></img>
     {displayVideo && (
       <>
-        <div className="margin-bottom-xs">
+        <div className="margin-bottom-20">
           <p className="bio-text">
             &ldquo;TWISTING ANCIENT DESIRES
             <br />
@@ -32,7 +32,7 @@ const About = ({ displayVideo = true }) => (
         <p className="presentation-title margin-bottom-5">
           HYBRID LIVE PERFORMANCE
         </p>
-        <p className="presentation-subtitle margin-bottom-ssm">
+        <p className="presentation-subtitle margin-bottom-30">
           Geneva, Switzerland
         </p>
       </>

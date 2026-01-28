@@ -7,13 +7,13 @@ const Track = ({
   track: { title, subtitle, soundCloudIframe, platforms, artwork },
 }) => {
   return (
-    <section id="track" className="section-no-padding margin-top-xxs">
+    <section id="track" className="section-no-padding margin-top-10">
       <p className="release-header text-lg mb-6">
         <strong>{title}</strong> by Twin Paradox
       </p>
       {subtitle && <p className="release-subtitle text-sm mb-6">{subtitle}</p>}
       {artwork && (
-        <div className="artwork-container margin-bottom-lg">
+        <div className="artwork-container margin-bottom-60">
           <Image
             src={artwork}
             alt={`${title} artwork`}

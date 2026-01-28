@@ -1,71 +1,30 @@
-'use client';
-import React, { useState } from 'react';
+import React from 'react';
+import SocialLinks from '../SocialLinks';
+
 import './styles.css';
 
-const ContactForm = () => {
-  const [submitted, setSubmitted] = useState(false);
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-
-    const form = e.target;
-
-    const data = typeof FormData !== 'undefined' ? new FormData(form) : null;
-    if (!data) {
-      if (typeof window !== 'undefined') {
-        alert('FormData is not supported in this environment.');
-      }
-      return;
-    }
-
-    const response = await fetch(
-      'https://formsubmit.co/twinparadoxmusica@gmail.com',
-      {
-        method: 'POST',
-        body: data,
-      }
-    );
-
-    if (response.ok) {
-      setSubmitted(true);
-      form.reset();
-    } else {
-      if (typeof window !== 'undefined') {
-        alert('Failed to send message. Please try again.');
-      }
-    }
-  };
-
-  return (
-    <div className="contact-wrapper">
-      <h2 className="margin-bottom-sm section presentation-title-lg">
-        CONTACT FORM
-      </h2>
-      {submitted ? (
-        <p className="success-message">
-          ✅ Your message was sent successfully!
-        </p>
-      ) : (
-        <form onSubmit={handleSubmit} className="contact-form">
-          <p className="contact-prompt">
-            We&apos;d love to hear from you! Whether you have a question,
-            feedback, or just want to say hello, drop us a message below —
-            we&rsquo;ll get back to you as soon as we can. 🚀
-          </p>
-          <input type="hidden" name="_captcha" value="false" />
-          <input type="text" name="name" placeholder="Your Name" required />
-          <input type="email" name="email" placeholder="Your Email" required />
-          <textarea
-            name="message"
-            placeholder="Your Message"
-            rows="5"
-            required
-          />
-          <button type="submit">Send</button>
-        </form>
-      )}
+const ContactForm = () => (
+  <div className="contact-wrapper section margin-top-10">
+    <div className="margin-bottom-40">
+      <p className="margin-bottom-10">
+        For bookings, press inquiries and professional collaborations:
+      </p>
+      <p className="margin-bottom-40 font-size-md">
+        <a href="mailto:twinparadoxmusica@gmail.com">
+          twinparadoxmusica@gmail.com
+        </a>
+      </p>
     </div>
-  );
-};
+    <div className="image-container margin-bottom-40">
+      <img
+        src="/assets/collage/twin-paradox-live-set.jpg"
+        alt="Twin Paradox Live Set"
+      />
+    </div>
+    <div className="margin-bottom-none">
+      <SocialLinks />
+    </div>
+  </div>
+);
 
 export default ContactForm;

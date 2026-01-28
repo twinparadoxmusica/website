@@ -21,7 +21,7 @@ const videos = [
 
 const Videos = () => (
   <section id="videos" className="section">
-    <h2 className="margin-bottom-sm presentation-title-lg">MUSIC VIDEOS</h2>
+    <h2 className="margin-bottom-40 presentation-title-lg">MUSIC VIDEOS</h2>
     {videos.map((video, index) => (
       <Video key={index} {...video} height={230} />
     ))}
