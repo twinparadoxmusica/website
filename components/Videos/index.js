@@ -4,7 +4,7 @@ import './styles.css';
 
 const videos = [
   {
-    title: 'Techno Rock Live Set | Salle du Terreau, Geneva',
+    title: 'Techno Rock Live Set',
     date: 'November 2025',
     videoUrl: 'https://www.youtube.com/watch?v=ggS_7tSCqNw',
     embedUrl:

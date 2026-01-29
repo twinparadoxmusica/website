@@ -17,6 +17,7 @@ const Track = ({ title, date, trackLink, artwork, buttonText }) => (
           width={250}
           height={250}
           priority
+          className="artwork-image"
         />
       </Link>
     </div>
