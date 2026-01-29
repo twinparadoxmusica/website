@@ -6,7 +6,7 @@ import './global.css'; // optional, create if needed
 export const metadata = {
   title: 'Twin Paradox',
   description:
-    'Twin Paradox is a Geneva-based Argentinian electronic music duo that creates hypnotic and energetic Techno with Rock/Metal influences.',
+    'Twin Paradox embodies the intersection of raw rock energy, theatrical progressions and hypnotic techno precision, shaping music as a performative experience.',
 };
 
 const RootLayout = ({ children }) => {
@@ -60,11 +60,11 @@ const RootLayout = ({ children }) => {
         {/* SEO Meta Tags */}
         <meta
           name="title"
-          content="Twin Paradox — Energetic Techno with Rock/Metal influences"
+          content="Twin Paradox embodies the intersection of raw rock energy, theatrical progressions and hypnotic techno precision, shaping music as a performative experience."
         />
         <meta
           name="description"
-          content="Twin Paradox is a Geneva-based Argentinian electronic music duo that creates hypnotic and energetic Techno with Rock/Metal influences. Formed by Mirko Hrubik and Ezequiel Cappellano, they perform live and DJ sets using analog gear, guitars, synths and vocals."
+          content="Twin Paradox embodies the intersection of raw rock energy, theatrical progressions and hypnotic techno precision, shaping music as a performative experience. Formed by Mirko Hrubik and Ezequiel Cappellano, they perform live and DJ sets using analog gear, guitars, synths and vocals."
         />
         <meta
           name="keywords"
@@ -78,30 +78,30 @@ const RootLayout = ({ children }) => {
         <meta property="og:url" content="https://www.twinparadox.music/" />
         <meta
           property="og:title"
-          content="Twin Paradox — Energetic Techno with Rock/Metal influences"
+          content="Twin Paradox embodies the intersection of raw rock energy, theatrical progressions and hypnotic techno precision, shaping music as a performative experience."
         />
         <meta
           property="og:description"
-          content="Twin Paradox is a Geneva-based Argentinian electronic music duo that creates hypnotic and energetic Techno with Rock/Metal influences."
+          content="Twin Paradox embodies the intersection of raw rock energy, theatrical progressions and hypnotic techno precision, shaping music as a performative experience."
         />
         <meta
           property="og:image"
-          content="https://www.twinparadox.music/assets/logo.svg"
+          content="https://www.twinparadox.music/assets/twin-paradox-live-set-castle-thumbnail.jpg"
         />
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:url" content="https://www.twinparadox.music/" />
         <meta
           name="twitter:title"
-          content="Twin Paradox — Energetic Techno with Rock/Metal influences"
+          content="Twin Paradox embodies the intersection of raw rock energy, theatrical progressions and hypnotic techno precision, shaping music as a performative experience."
         />
         <meta
           name="twitter:description"
-          content="Twin Paradox is a Geneva-based Argentinian electronic music duo that creates hypnotic and energetic Techno with Rock/Metal influences."
+          content="Twin Paradox embodies the intersection of raw rock energy, theatrical progressions and hypnotic techno precision, shaping music as a performative experience."
         />
         <meta
           name="twitter:image"
-          content="https://www.twinparadox.music/assets/logo.svg"
+          content="https://www.twinparadox.music/assets/twin-paradox-live-set-castle-thumbnail.jpg"
         />
 
         {/* Music Metadata */}
