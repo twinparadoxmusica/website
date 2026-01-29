@@ -11,7 +11,10 @@ const Track = ({
       <p className="release-header text-lg mb-6">
         <strong>{title}</strong> by Twin Paradox
       </p>
-      <a className="btn-follow-sc" href="/api/soundcloud/login">
+      <a
+        className="btn-follow-sc track-cta margin-bottom-20"
+        href="/api/soundcloud/login"
+      >
         Follow on SoundCloud
       </a>
       {subtitle && <p className="release-subtitle text-sm mb-6">{subtitle}</p>}
