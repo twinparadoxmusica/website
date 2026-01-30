@@ -76,10 +76,7 @@ const RootLayout = ({ children }) => {
         {/* Open Graph & Twitter Cards */}
         <meta property="og:type" content="music.group" />
         <meta property="og:url" content="https://www.twinparadox.music/" />
-        <meta
-          property="og:title"
-          content="Twin Paradox embodies the intersection of raw rock energy, theatrical progressions and hypnotic techno precision, shaping music as a performative experience."
-        />
+        <meta property="og:title" content="Twin Paradox — Techno Rock Duo" />
         <meta
           property="og:description"
           content="Twin Paradox embodies the intersection of raw rock energy, theatrical progressions and hypnotic techno precision, shaping music as a performative experience."
@@ -91,10 +88,7 @@ const RootLayout = ({ children }) => {
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:url" content="https://www.twinparadox.music/" />
-        <meta
-          name="twitter:title"
-          content="Twin Paradox embodies the intersection of raw rock energy, theatrical progressions and hypnotic techno precision, shaping music as a performative experience."
-        />
+        <meta name="twitter:title" content="Twin Paradox — Techno Rock Duo" />
         <meta
           name="twitter:description"
           content="Twin Paradox embodies the intersection of raw rock energy, theatrical progressions and hypnotic techno precision, shaping music as a performative experience."
@@ -245,7 +239,7 @@ const RootLayout = ({ children }) => {
             style={{ display: 'none', visibility: 'hidden' }}
           ></iframe>
         </noscript>
-        <title>Twin Paradox Official Website</title>
+        <title>Twin Paradox - Techno Rock Duo</title>
       </head>
       <body>{children}</body>
     </html>
