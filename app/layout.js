@@ -68,7 +68,7 @@ const RootLayout = ({ children }) => {
         />
         <meta
           name="keywords"
-          content="Twin Paradox, techno, raw techno, hypnotic techno, minimal techno, minimal house, techno rock, techno metal, technorock, technometal, electronic music duo, Argentinian musicians, Geneva techno, hybrid live set, techno with guitar, techno live act, electronic rock, analog techno, modular synth, hypnotic techno, Mirko Hrubik, Ezequiel Cappellano, Atahualpa Studio, DJ set Geneva, electronic duo 2023, techno band, rock influences, guitar, singer, techno live performance"
+          content="Twin Paradox, techno, raw techno, hypnotic techno, minimal techno, minimal house, technorock, techno metal, techno rock, technometal, electronic music duo, Argentinian musicians, Geneva techno, hybrid live set, techno with guitar, techno live act, electronic rock, analog techno, modular synth, hypnotic techno, Mirko Hrubik, Ezequiel Cappellano, Atahualpa Studio, DJ set Geneva, electronic duo 2023, techno band, rock influences, guitar, singer, techno live performance"
         />
         <meta name="author" content="Twin Paradox" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -76,7 +76,7 @@ const RootLayout = ({ children }) => {
         {/* Open Graph & Twitter Cards */}
         <meta property="og:type" content="music.group" />
         <meta property="og:url" content="https://www.twinparadox.music/" />
-        <meta property="og:title" content="Twin Paradox — Techno Rock Duo" />
+        <meta property="og:title" content="Twin Paradox — TechnoRock Duo" />
         <meta
           property="og:description"
           content="Twin Paradox embodies the intersection of raw rock energy, theatrical progressions and hypnotic techno precision, shaping music as a performative experience."
@@ -88,7 +88,7 @@ const RootLayout = ({ children }) => {
 
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:url" content="https://www.twinparadox.music/" />
-        <meta name="twitter:title" content="Twin Paradox — Techno Rock Duo" />
+        <meta name="twitter:title" content="Twin Paradox — TechnoRock Duo" />
         <meta
           name="twitter:description"
           content="Twin Paradox embodies the intersection of raw rock energy, theatrical progressions and hypnotic techno precision, shaping music as a performative experience."
@@ -239,7 +239,7 @@ const RootLayout = ({ children }) => {
             style={{ display: 'none', visibility: 'hidden' }}
           ></iframe>
         </noscript>
-        <title>Twin Paradox - Techno Rock Duo</title>
+        <title>Twin Paradox - TechnoRock Duo</title>
       </head>
       <body>{children}</body>
     </html>

@@ -28,7 +28,7 @@ const Collage = () => {
           tension like a live show.
         </p>
         <p>
-          They develop a language they call &ldquo;Techno Rock&rdquo; — a hybrid
+          They develop a language they call &ldquo;TechnoRock&rdquo; — a hybrid
           aesthetic where riffs, distorted textures, rock music elements and
           club-driven sound design merge into hypnot ic, physical tracks built
           for movement and impact.
