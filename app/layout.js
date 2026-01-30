@@ -79,7 +79,7 @@ const RootLayout = ({ children }) => {
         <meta property="og:title" content="Twin Paradox — TechnoRock Duo" />
         <meta
           property="og:description"
-          content="Twin Paradox embodies the intersection of raw rock energy, theatrical progressions and hypnotic techno precision, shaping music as a performative experience."
+          content="Twin Paradox embodies the intersection of raw rock energy, theatrical progressions and hypnotic techno precision."
         />
         <meta
           property="og:image"
@@ -91,7 +91,7 @@ const RootLayout = ({ children }) => {
         <meta name="twitter:title" content="Twin Paradox — TechnoRock Duo" />
         <meta
           name="twitter:description"
-          content="Twin Paradox embodies the intersection of raw rock energy, theatrical progressions and hypnotic techno precision, shaping music as a performative experience."
+          content="Twin Paradox embodies the intersection of raw rock energy, theatrical progressions and hypnotic techno precision."
         />
         <meta
           name="twitter:image"
